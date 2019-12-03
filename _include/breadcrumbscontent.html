@@ -1,4 +1,4 @@
-{% unless pageclass == compare="home" %}
+{% unless pageclass contains "home" %}
 	{% if page.breadcrumb }
 				{% for item in item.breadcrumb %}<li><a href="{{ link }}">{{ title }}</a></li>{% endfor %}
 

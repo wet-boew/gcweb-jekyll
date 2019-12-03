@@ -1,0 +1,5 @@
+<section class="col-md-4">
+{% if page.pageType == "organization" %}<h3 class="wb-inv">{{ i18n "corp-info-job-org-head" | escape }}</h3>{% endif %}
+{% if page.pageType == "institution" %}<h3>{{i18n "corp-info-job" | escape }}</h3>{% endif %}
+	{% include corp-info-figure %}
+</section>
