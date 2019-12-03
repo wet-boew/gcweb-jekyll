@@ -1,5 +1,4 @@
 # Jekyll theme for GCweb
-Jekyll variant of the GCWeb
 [![Build Status](https://travis-ci.org/pages-themes/gcweb-jekyll.svg?branch=master)](https://travis-ci.org/pages-themes/gcweb-jekyll) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-gcweb.svg)](https://badge.fury.io/rb/jekyll-theme-gcweb)
 
 *GCweb is a Jekyll theme for Government of Canada websites. You can [preview the theme to see what it looks like](http://wet-boew.github.io/gcweb-jekyll), or even [use it today](#usage).*
