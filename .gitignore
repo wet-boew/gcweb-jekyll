@@ -1,0 +1,7 @@
+_site/
+node_modules
+.sass-cahae
+*.gem
+Gemfile.lock
+assets/**/*.html
+assets/**/*.md

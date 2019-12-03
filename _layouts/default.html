@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="{{language}}" dir="{{i18n 'lang-dir'}}"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="{{ site.lang | default: 'en-CA' }}" dir="{{ i18n 'lang-dir' }}">
+<!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		{% include license %}
+		<title>{% include pagetitle %}</title>
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
+		{% include metadata %}
+		{% include headresources %}
+	</head>
+	<body {% if pageclass }class="{{pageclass}}" {% endif %}vocab="http://schema.org/" typeof="WebPage">
+		{% include body %}
+		{% include footerresources %}
+	</body>
+</html>
