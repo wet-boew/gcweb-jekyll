@@ -1,0 +1,20 @@
+exclude:
+  - node_modules
+  - script
+
+sass:
+  style: :compressed
+
+theme: jekyll-theme-gcweb
+
+github:
+  private: false
+  license:
+    name: MIT
+  source:
+    branch: "master"
+    path: "/"
+  repository_url: "https://github.com/wet-boew/GCweb-jekyll"
+  
+title: Jekyll Theme GCweb
+description: GCweb-jekyll is a Jekyll theme for GitHub Pages
