@@ -1,0 +1,23 @@
+---
+	layout: default.html
+---
+<div class="wb-sppe">
+	<header role="banner">
+		<div id="wb-bnr">
+			<div class="container">
+				<div class="row mrgn-tp-lg mrgn-bttm-lg">
+					<div id="wb-spllg" class="col-md-8 col-md-offset-2">
+						<img src="{{ assets} }/../{{ site.theme }}/assets/logo.svg" alt="{{ i18n 'site-title'}}" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main role="main" property="mainContentOfPage" class="container">
+		<div class="row mrgn-tp-lg">
+			<div class="col-md-12">
+				{% include body %}
+			</div>
+		</div>
+	</main>
+</div>
