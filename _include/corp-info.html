@@ -1,0 +1,27 @@
+<section class="gc-crprt">
+	<h2>{{i18n "corp-info-header" | escape }}</h2>
+	<div class="row">
+		<div class="col-md-4">
+			<ul>
+				<li><a href="#">{{i18n "corp-info-list-item1" | escape }}</a></li>
+				<li><a href="#">{{i18n "corp-info-list-item2" | escape }}</a></li>
+				<li><a href="#">{{i18n "corp-info-list-item3" | escape }}</a></li>
+				{% if page.pageType == "institution" %}<li><a href="#">{{i18n "corp-info-list-item4" | escape }}</a></li>{% endif %}
+				{% if page.pageType == "institution" %}<li><a href="#">{{i18n "corp-info-list-item5" | escape }}</a></li>{% endif %}
+				{% if page.pageType == "institution" %}<li><a href="#">{{i18n "corp-info-list-item6" | escape }}</a></li>{% endif %}
+				<li><a href="#">{{i18n "corp-info-list-item7" | escape }}</a></li>
+				{% if page.pageType == "institution" %}<li><a href="#">{{i18n "corp-info-list-item8" | escape }}</a></li>{% endif %}
+				{% if page.pageType == "organization" %}<li><a href="#">{{i18n "corp-info-list-item8" | escape }}</a></li>{% endif %}
+			</ul>
+		</div>
+		<div class="col-md-8">
+			<div class="wb-eqht row">
+				{% include corp-info-roles %}
+			{% if page.pageType == "institution" %}
+				{% include corp-info-roles %}
+				{% include corp-info-roles-management %}
+			{% endif %}
+			</div>
+		</div>
+	</div>
+</section>
