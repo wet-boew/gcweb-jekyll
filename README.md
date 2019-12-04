@@ -71,7 +71,11 @@ See the [open issues](https://github.com/wet-boew/gcweb-jekyll/issues) for a lis
 
 The GCweb theme is intended to make it quick and easy for Government of Canada employees to create their first (or 100th) website of GitHub for their organisation. The theme should meet the vast majority of users' needs out of the box, erring on the side of simplicity rather than flexibility, and provide users the opportunity to opt-in to additional complexity if they have specific needs or wish to further customize their experience (such as adding custom CSS or modifying the default layout). It should also look great, but that goes without saying.
 
-<hr>
+## How to Contribute
+
+See [CONTRIBUTING.md](CONTRIBUTING.md)
+
+------
 _(French version will be available shortly)_
 
 # Le thème Jekyll de GCweb
@@ -146,3 +150,7 @@ See the [open issues](https://github.com/wet-boew/gcweb-jekyll/issues) for a lis
 ## Project philosophy
 
 The GCweb theme is intended to make it quick and easy for Government of Canada employees to create their first (or 100th) website of GitHub for their organisation. The theme should meet the vast majority of users' needs out of the box, erring on the side of simplicity rather than flexibility, and provide users the opportunity to opt-in to additional complexity if they have specific needs or wish to further customize their experience (such as adding custom CSS or modifying the default layout). It should also look great, but that goes without saying.
+
+## Comment contribuer
+
+Voir [CONTRIBUTING.md](CONTRIBUTING.md)

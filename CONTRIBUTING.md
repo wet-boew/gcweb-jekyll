@@ -19,7 +19,9 @@ Here are a few tips for writing *great* bug reports:
 * Only include one bug per issue. If you have discovered two bugs, please file two issues
 * Even if you don't know how to fix the bug, including a failing test may help others track it down
 
-**If you find a security vulnerability, do not open an issue. Please email someone@canada.ca instead.**
+### Security
+
+**Do not post any security issues on the public repository!** See [SECURITY.md](SECURITY.md)
 
 ## How to suggest a feature or enhancement
 
@@ -97,4 +99,18 @@ If you'd like to preview the theme locally (for example, in the process of propo
 
 The theme contains a minimal test suite, to ensure a site with the theme would build successfully. To run the tests, simply run `script/cibuild`. You'll need to run `script/bootstrap` one before the test script will work.
 
+______________________
+
 _(French version will be available shortly)_
+
+## Comment contribuer
+
+Lorsque vous contribuez, veuillez également publier des commentaires et discuter des modifications que vous souhaitez apporter par l'entremise des enjeux (Issues).
+
+N'hésitez pas à proposer des modifications en créant des demandes de tirage (Pull Requests). Si vous n'avez pas accès au mode de rédaction, la modification d'un fichier créera une copie (Fork) de ce projet afin que vous puissiez enregistrer les modifications que vous proposez. Le fait de proposer une modification à un fichier l'écrira dans une nouvelle branche dans votre copie (Fork), de sorte que vous puissiez envoyer une demande de tirage (Pull Request).
+
+Si c'est la première fois que vous contribuez à GitHub, ne vous en faites pas! Faites-nous part de vos questions.
+
+### Sécurité
+
+**Ne publiez aucun problème de sécurité sur le dépôt publique!** Voir [SECURITY.md](SECURITY.md)
