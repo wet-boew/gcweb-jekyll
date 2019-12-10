@@ -5,14 +5,59 @@
 <!--<![endif]-->
 	<head>
 		<meta charset="utf-8" />
-		{% include license %}
-		<title>{% include pagetitle %}</title>
+		{% include license %} <!-- partial -->
+		<title>{% include pagetitle %}</title>  <!-- partial -->
 		<meta content="width=device-width, initial-scale=1" name="viewport" />
-		{% include metadata %}
-		{% include headresources %}
+		{% include metadata %}  <!-- partial -->
+		{% include headresources %}  <!-- partial -->
 	</head>
 	<body {% if pageclass }class="{{pageclass}}" {% endif %}vocab="http://schema.org/" typeof="WebPage">
-		{% include body %}
-		{% include footerresources %}
+		{% if page.pageType == "archived" %}
+			{% include archive }  <!-- partial -->
+		{% endif %}
+		{% include skiplinks }
+		{% include header }
+		{% include promotion %}
+		{% if page.secondarymenu %}
+		<div class="container">
+			<div class="row">
+				<main property="mainContentOfPage" class="col-md-9 col-md-push-3" typeof="WebPageElement">
+		{% else %}
+		<main property="mainContentOfPage" class="{% unless page.noMainContainer %}container{% endunless %}
+			{% if page.pageType == 'institution' %} gc-instttn{% endif %}
+			{% if page.pageType == 'organization'} gc-orgnztn {% endif %}
+			{% if page.pageType == 'theme'} gc-theme {% endif %}
+			{% if page.pageType == 'news'} gc-news {% endif %}
+			{% if page.pageType == 'advance service'} gc-advnc-srvc{% endif %}" typeof="WebPageElement">
+		{% endif %}
+		{% unless page.noContentTitle %}
+			{% if page.pageclass != "page-type-nav" %}
+					<h1 property="name" id="wb-cont">{{title}}</h1>
+			{% endif %}
+		{% endunless %}
+					{% include contentbuttons %} <!-- partial -->
+					{% include body %} <!-- partial -->
+		{% if page.deptfeature == true %}
+			{% include deptfeatures %} <!-- partial -->
+		{% endif %}
+		{%if page.dateModified %}
+			{% include datemodified %} <!-- partial -->
+		{% endif %}
+		</main>
+		{% if page.secondarymenu %}
+				<nav class="wb-sec col-md-3  col-md-pull-9" typeof="SiteNavigationElement" id="wb-sec" role="navigation">
+					<h2 id="wb-sec-h" class="wb-inv">{{{i18n "tmpl-section-menu"}}}</h2>
+					{% include secondarymenu %} <!-- partial -->
+				</nav>
+			</div>
+		</div>
+		{% endif %}
+		{% if page.armslength %}
+			{% include armslength-footer %} <!-- partial -->}
+		{% endif %}
+		{% if footer == "false" %}
+			{% include footer %} <!-- partial -->
+		{% endif %}
+		{% include footerresources %}  <!-- partial -->
 	</body>
 </html>
