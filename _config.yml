@@ -5,7 +5,7 @@ exclude:
 sass:
   style: :compressed
 
-theme: jekyll-theme-gcweb
+theme: gcweb
 
 github:
   private: false
