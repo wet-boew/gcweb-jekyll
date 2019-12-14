@@ -1,0 +1,19 @@
+<aside class="jumbotron sub-promo visible-md visible-lg">
+	<div class="container">
+		<div class="row">
+			<h2 class="wb-inv">{% site.data.i18n[tmpl-promo-title.lang] %}</h2>
+			<div class="col-md-6 col-offset-1">
+				<h2 class="h3">{% if lang == "en" %}Remembrance Vignette{% else %}Capsule commémorative{% endif %}</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, quas, ipsa error modi sequi odio doloribus vero. Veniam error facilis voluptates Optio.</p>
+				<p class="text-center">
+					<a href="video-{{ lang }}.html" class="btn btn-primary text-center">{% if lang == "en" %}See the video{% else %}Voir la vidéo{% endif %}</a>
+				</p>
+			</div>
+			<div class="col-md-5 profileimage">
+				<a href="video-{{ lang }}.html">
+					<img src="http://dev3.canada.ca/video/2012veterans.jpg" alt="{% if lang == "en" %}Remembrance Vignette{% else %}Capsule commémorative{% endif %}" class="thumbnail" />
+				</a>
+			</div>
+		</div>
+	</div>
+</aside>

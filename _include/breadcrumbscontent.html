@@ -1,10 +1,9 @@
 {% unless pageclass contains "home" %}
-	{% if page.breadcrumb }
+	{% if page.breadcrumb == true }
 				{% for item in item.breadcrumb %}<li><a href="{{ link }}">{{ title }}</a></li>{% endfor %}
-
 	{% else %}
 <li>
-	<a href="{{ site.wetSiteRoot }}/index-{{ language }}.html">{{ i18n "tmpl-home" | escape }}</a>
+	<a href="{{ site.wetSiteRoot }}/index-{{ lang }}.html">{{ site.data.i18n[tmpl-home.lang] | escape }}</a>
 </li>
 		{%if page.src contains "/demos/index" %}
 		{% else %}
@@ -13,34 +12,34 @@
 					{% if page.src contains "/index" %}
 					{% else %}
 <li>
-	<a href="{{ site.wetSiteRoot }}/docs/versions/index-{{ language }}.html">{{ i18n "tmpl-version-history" | escape }}</a>
+	<a href="{{ site.wetSiteRoot }}/docs/versions/index-{{ lang }}.html">{{ site.data.i18n[tmpl-version-history.lang] | escape }}</a>
 </li>
 					{% endif %}
 				{% else %}
 					{%if page.src contains "/docs/index" %}
 					{% else %}
 <li>
-	<a href="{{ site.wetSiteRoot }}/docs/index-{{ language }}.html">{{ i18n "tmpl-documentation" | escape }}</a>
+	<a href="{{ site.wetSiteRoot }}/docs/index-{{ lang }}.html">{{ site.data.i18n[tmpl-documentation.lang] | escape }}</a>
 </li>
-						{% if page.categoryfile %}
+						{% if page.categoryfile == true %}
 <li>
-	<a href="{{ site.wetSiteRoot }}/docs/ref/{{ page.categoryfile }}-{{ language }}.html">{{ page.category }}</a>
+	<a href="{{ site.wetSiteRoot }}/docs/ref/{{ page.categoryfile }}-{{ lang }}.html">{{ page.category }}</a>
 </li>
 						{% endif %}
 					{% endif %}
 				{% endif %}
 			{% else %}
 <li>
-	<a href="{{ site.wetSiteRoot }}/demos/index-{{ language }}.html">{{ i18n "tmpl-work-examples" | escape }}</a>
+	<a href="{{ site.wetSiteRoot }}/demos/index-{{ lang }}.html">{{ site.data.i18n[tmpl-work-examples.lang] | escape }}</a>
 </li>
-				{% if breadcrumb3 %}
+				{% if breadcrumb3 == true %}
 					{% if tag contains "theme-wet-boew"}}
 <li>
-	<a href="{{ site.wetSiteRoot }}/theme/index-{{ language }}.html">{{ breadcrumb3-title }}</a>
+	<a href="{{ site.wetSiteRoot }}/theme/index-{{ lang }}.html">{{ breadcrumb3-title }}</a>
 </li>
 					{% else %}
 <li>
-	<a href="{{ site.wetSiteRoot }}/demos/{{ tag }}/index-{{ language }}.html">{{ breadcrumb3-title }}</a>
+	<a href="{{ site.wetSiteRoot }}/demos/{{ tag }}/index-{{ lang }}.html">{{ breadcrumb3-title }}</a>
 </li>
 					{% endif %}
 				{% endif %}

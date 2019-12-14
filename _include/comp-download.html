@@ -5,8 +5,8 @@
 				<p><img class="img-responsive thumbnail gc-dwnld-img" src="./img/doc.png" alt="" /></p>
 			</div>
 			<div class="col-xs-8">
-				<p class="gc-dwnld-txt"><span>{{ i18n "comp-dwnld-title" | escape }} </span>
-				<span class="gc-dwnld-info">(<abbr{% if page.language == "fr" %} lang="en"{% endif %} title="Portable Document Format">PDF</abbr>, 273 <abbr title="{{ i18n "comp-dwnld-size-abbr" | escape }}">{{ i18n "comp-dwnld-size-type" | escape }}</abbr>)</span></p>
+				<p class="gc-dwnld-txt"><span>{{ site.data.i18n[comp-dwnld-title.lang] | escape }} </span>
+				<span class="gc-dwnld-info">(<abbr{% if page.lang == "fr" %} lang="en"{% endif %} title="Portable Document Format">PDF</abbr>, 273 <abbr title="{{ site.data.i18n[comp-dwnld-size-abbr.lang] | escape }}">{{ site.data.i18n[comp-dwnld-size-type.lang] | escape }}</abbr>)</span></p>
 			</div>
 		</div>
 	</div>

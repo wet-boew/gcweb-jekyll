@@ -1,0 +1,18 @@
+<!--[if gte IE 9 | !IE ]><!-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/{{ environment.jqueryVersion }}/jquery.js"></script>
+<script src="{{ assets }}/../wet-boew/js/wet-boew.js"></script>
+<!--<![endif]-->
+{% if page.js == true %}{% for js in page.js %}<script src="{{ this }}.js"></script>{% endfor %}{% endif %}
+{% if page.jsie9 == true %}
+<!--[if lte IE 9]>
+{% for jsie9 in page.jsie9 %}<script src="{{ this }}.js"></script>{% endfor %}
+<![endif]-->
+{% endif %}
+<!--[if lt IE 9]>
+<script src="{{ assets }}/../wet-boew/js/ie8-wet-boew2.js"></script>
+{% if page.jsie8 == true %}{% for jsie8 in page.jsie8 %}<script src="{{ this }}.js"></script>{% endfor %}{% endif %}
+<![endif]-->
+{% if site.themeJS == true %}
+<script src="{{ assets }}/../{{ site.theme }}/js/theme.js"></script>
+{% endif %}
+{% if section == "mobile-centre" %}<script src="{{ assets }}/js/whole-record-link.js"></script>{% endif %}

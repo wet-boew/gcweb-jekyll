@@ -1,0 +1,24 @@
+<header>
+	<div id="wb-bnr" class="container">
+{% if langtoggle != false %}
+	{% include langtoggle %}
+{% endif %}
+		<div class="row">
+			{% include brand %}
+{% if sitesearch != false %}
+	{% include sitesearch %}
+{% endif %}
+		</div>
+	</div>
+{% if sitemenu != false %}
+	{% include sitemenu %}
+{% else %}
+	<span data-trgt="mb-pnl" class="wb-menu hide"></span>
+{% endif %}
+{% if breadcrumb != false %}
+	{% include breadcrumbs %}
+{% endif %}
+{% if signed == true %}
+	{% include sign-on-off %}
+{% endif %}
+</header>

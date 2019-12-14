@@ -1,0 +1,17 @@
+<nav>
+	<ul id="wb-tphp">
+		<li class="wb-slc">
+			<a class="wb-sl" href="#wb-cont">{{ site.data.i18n[tmpl-skip-cont.lang] }}</a>
+		</li>
+	{% if footer == true %}
+		<li class="wb-slc visible-sm visible-md visible-lg">
+			<a class="wb-sl" href="#wb-info">{{ site.data.i18n[tmpl-skip-about-site.lang] }}</a>
+		</li>
+	{% endif %}
+	{% if secondarymenu == true }
+		<li class="wb-slc visible-md visible-lg">
+			<a class="wb-sl" href="#wb-sec">{{ site.data.i18n[tmpl-skip-section.lang] }}</a>
+		</li>
+	{% endif %}
+	</ul>
+</nav>
