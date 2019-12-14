@@ -7,10 +7,13 @@ breadcrumb: [
     { "title": "Institution name", "link": "./institution-en.html" },
     { "title": "Topic name", "link": "./topic-en.html" }
   ]
+categoryfile:
 css: []
 dateModified: "YYYY-MM-DD"
 deptfeature: true | false
 js: []
+jsie8: []
+jsie9: []
 lang: en | fr
 localnavHeadings: [
   { "title": "", "link": ""}
