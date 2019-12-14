@@ -1,63 +1,64 @@
 <!DOCTYPE html>
-<!--[if lt IE 9]><html class="no-js lt-ie9" lang="{{language}}" dir="{{i18n 'lang-dir'}}"><![endif]-->
+{% assign lang = "page.lang" %}
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="{{ lang }}-CA" dir="{{ site.data.i18n[lang-dir.lang] }}"><![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js" lang="{{ site.lang | default: 'en-CA' }}" dir="{{ i18n 'lang-dir' }}">
+<html class="no-js" lang="{{ page.lang | default: 'en' }}-CA" dir="{{ site.data.i18n[lang-dir.lang] }}">
 <!--<![endif]-->
 	<head>
 		<meta charset="utf-8" />
-		{% include license %} <!-- partial -->
-		<title>{% include pagetitle %}</title>  <!-- partial -->
+		{% include license %}
+		<title>{{ pagetitle }}</title> 
 		<meta content="width=device-width, initial-scale=1" name="viewport" />
-		{% include metadata %}  <!-- partial -->
-		{% include headresources %}  <!-- partial -->
+		{% include metadata %} 
+		{% include headresources %} 
 	</head>
-	<body {% if pageclass }class="{{pageclass}}" {% endif %}vocab="http://schema.org/" typeof="WebPage">
+	<body {% if pageclass == true %}class="{{ pageclass }}" {% endif %}vocab="http://schema.org/" typeof="WebPage">
 		{% if page.pageType == "archived" %}
-			{% include archive }  <!-- partial -->
+			{% include archive } 
 		{% endif %}
 		{% include skiplinks }
 		{% include header }
 		{% include promotion %}
-		{% if page.secondarymenu %}
+		{% if page.secondarymenu == true %}
 		<div class="container">
 			<div class="row">
 				<main property="mainContentOfPage" class="col-md-9 col-md-push-3" typeof="WebPageElement">
 		{% else %}
-		<main property="mainContentOfPage" class="{% unless page.noMainContainer %}container{% endunless %}
-			{% if page.pageType == 'institution' %} gc-instttn{% endif %}
-			{% if page.pageType == 'organization'} gc-orgnztn {% endif %}
-			{% if page.pageType == 'theme'} gc-theme {% endif %}
-			{% if page.pageType == 'news'} gc-news {% endif %}
-			{% if page.pageType == 'advance service'} gc-advnc-srvc{% endif %}" typeof="WebPageElement">
+				<main property="mainContentOfPage" class="{% unless page.noMainContainer %}container{% endunless %}
+				{% if page.pageType == 'institution' %} gc-instttn{% endif %}
+				{% if page.pageType == 'organization' %} gc-orgnztn {% endif %}
+				{% if page.pageType == 'theme' %} gc-theme {% endif %}
+				{% if page.pageType == 'news' %} gc-news {% endif %}
+				{% if page.pageType == 'advance service' %} gc-advnc-srvc{% endif %}" typeof="WebPageElement">
 		{% endif %}
 		{% unless page.noContentTitle %}
 			{% if page.pageclass != "page-type-nav" %}
-					<h1 property="name" id="wb-cont">{{title}}</h1>
+					<h1 property="name" id="wb-cont">{{ title }}</h1>
 			{% endif %}
 		{% endunless %}
-					{% include contentbuttons %} <!-- partial -->
-					{% include body %} <!-- partial -->
+					{% include contentbuttons %}
+					{% include body %}
 		{% if page.deptfeature == true %}
-			{% include deptfeatures %} <!-- partial -->
+			{% include deptfeatures %}
 		{% endif %}
 		{%if page.dateModified %}
-			{% include datemodified %} <!-- partial -->
+			{% include datemodified %}
 		{% endif %}
 		</main>
-		{% if page.secondarymenu %}
+		{% if page.secondarymenu == true %}
 				<nav class="wb-sec col-md-3  col-md-pull-9" typeof="SiteNavigationElement" id="wb-sec" role="navigation">
-					<h2 id="wb-sec-h" class="wb-inv">{{{i18n "tmpl-section-menu"}}}</h2>
-					{% include secondarymenu %} <!-- partial -->
+					<h2 id="wb-sec-h" class="wb-inv">{{ site.data.i18n[tmpl-section-menu.lang] }}</h2>
+					{% include secondarymenu %}
 				</nav>
 			</div>
 		</div>
 		{% endif %}
-		{% if page.armslength %}
-			{% include armslength-footer %} <!-- partial -->}
+		{% if page.armslength == true %}
+			{% include armslength-footer %}}
 		{% endif %}
-		{% if footer == "false" %}
-			{% include footer %} <!-- partial -->
+		{% if footer == false %}
+			{% include footer %}
 		{% endif %}
-		{% include footerresources %}  <!-- partial -->
+		{% include footerresources %} 
 	</body>
 </html>
