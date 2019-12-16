@@ -8,9 +8,13 @@ breadcrumb: [
     { "title": "Topic name", "link": "./topic-en.html" }
   ]
 categoryfile:
+creator-en:
+creator-fr:
 css: []
 dateModified: "YYYY-MM-DD"
 deptfeature: true | false
+description-en:
+description-fr:
 js: []
 jsie8: []
 jsie9: []
@@ -28,9 +32,12 @@ secondlevel: true | false
 secondarymenu: [
   { "title": "", "link": ""}
 ]
+section: message | mobile-center
 site-description: 
 share: true | false
 src: /demos/index | /docs/ | /versions/ | /index | /docs/index
+subject-en:
+subject-fr:
 title: 
 
 ---
