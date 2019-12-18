@@ -1,9 +1,5 @@
-_site/
-node_modules
-.sass-cahae
-.bundle
 *.gem
+.bundle
+.sass-cache
+_site
 Gemfile.lock
-assets/**/*.html
-assets/**/*.md
-.DS_Store
