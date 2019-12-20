@@ -1,5 +1,5 @@
 # Jekyll theme for GCweb
-[![Build Status](https://travis-ci.org/pages-themes/gcweb-jekyll.svg?branch=master)](https://travis-ci.org/pages-themes/gcweb-jekyll) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-gcweb.svg)](https://badge.fury.io/rb/jekyll-theme-gcweb)
+[![Build Status](https://travis-ci.org/wet-boew/gcweb-jekyll.svg?branch=master)](https://travis-ci.org/wet-boew/gcweb-jekyll) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-gcweb.svg)](https://badge.fury.io/rb/jekyll-theme-gcweb)
 
 *GCweb is a Jekyll theme for Government of Canada websites. You can [preview the theme to see what it looks like](http://wet-boew.github.io/gcweb-jekyll), or even [use it today](#usage).*
 
@@ -79,7 +79,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md)
 _(French version will be available shortly)_
 
 # Le thème Jekyll de GCweb
-[![Build Status](https://travis-ci.org/pages-themes/gcweb-jekyll.svg?branch=master)](https://travis-ci.org/pages-themes/gcweb-jekyll) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-gcweb.svg)](https://badge.fury.io/rb/jekyll-theme-gcweb)
+[![Build Status](https://travis-ci.org/wet-boew/gcweb-jekyll.svg?branch=master)](https://travis-ci.org/wet-boew/gcweb-jekyll) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-gcweb.svg)](https://badge.fury.io/rb/jekyll-theme-gcweb)
 
 *gcweb-jeckyll est un the Jekyll pour les sites web du gouvernement du Canada. Vous pouvez [voir un aperçu du thème pour avoir une idée de ce à quoi cela ressemble](http://wet-boew.github.io/gcweb-jekyll), ou sinon [vous pouvez l'utiliser maintenant](#utlisitation).*
 
