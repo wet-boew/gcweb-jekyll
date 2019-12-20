@@ -1,9 +1,9 @@
 <footer id="wb-info">
 	<div class="landscape">
 		<nav class="container wb-navcurr">
-			<h2 class="wb-inv">{{ site.data.i18n[tmpl-about-government.lang] | escape }}</h2>
-			{% include footercontent %}
+			<h2 class="wb-inv">{{ i18n.tmpl-about-government[lang] | escape }}</h2>
+			{% include footercontent.html %}
 		</nav>
 	</div>
-	{% include footerbrand %}
+	{% include footerbrand.html %}
 </footer>

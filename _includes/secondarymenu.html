@@ -1,10 +1,10 @@
 <section class="list-group menu list-unstyled">
-<h3>{% for localnavHeading in page.localnavHeadings %}<a href="{{ link }}">{{ title }}</a>{% endfor %}</h3>
+<h3>{% for localnavHeading in page.localnavHeadings %}<a href="{{ localnavHeading.link }}">{{ localnavHeading.title }}</a>{% endfor %}</h3>
 	<ul class="list-group menu list-unstyled">
-		{% for menu in page.secondarymenu %}<li><a href="{{ link }}" class="list-group-item">{{ title }}</a>
+		{% for menu in page.secondarymenu %}<li><a href="{{ menu.link }}" class="list-group-item">{{ menu.title }}</a>
 			{% if subnav %}
 			<ul class="list-group menu list-unstyled">
-				{% for nav in subnav %}<li><a href="{{ link }}" class="list-group-item">{{ title }}</a></li>{% endfor %}
+				{% for nav in subnav %}<li><a href="{{ nav.link }}" class="list-group-item">{{ nav.title }}</a></li>{% endfor %}
 			</ul>
 			{% endif %}
 		</li>

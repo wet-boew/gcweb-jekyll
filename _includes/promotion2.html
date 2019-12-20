@@ -1,14 +1,14 @@
 <aside class="jumbotron sub-promo visible-md visible-lg">
 	<div class="container">
 		<div class="row">
-			<h2 class="wb-inv">{% site.data.i18n[tmpl-promo-title.lang] %}</h2>
+			<h2 class="wb-inv">{{ i18n.tmpl-promo-title[lang] | escape }}</h2>
 			<figure class="col-md-12">
-				<img src="{{ assets }}/img/promos/subpromo.jpg" alt="" />
+				<img src="{{ assets }}/img/promos/{{ page.img-subpromo }}" alt="" />
 				<figcaption class="col-md-3 col-md-offset-1 margin-top-medium">
-					<h2 class="h3">Living in Canada</h2>
-					<p class="subtext">Find information and services to help you adjust to life in Canada</p>
+					<h2 class="h3">{{ page.title-subpromo }}</h2>
+					<p class="subtext">{{ page.text-subpromo }}</p>
 					<p>
-						<a href="#" class="btn btn-primary margin-top-large">Get Started</a>
+						<a href="#" class="btn btn-primary margin-top-large">{{ page.cta-subpromo }}</a>
 					</p>
 				</figcaption>
 			</figure>

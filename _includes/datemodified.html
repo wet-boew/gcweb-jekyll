@@ -1,12 +1,10 @@
-<div class="pagedetails
-{% if page.noMainContainer == true %} container{% endif %}
-">
+<div class="pagedetails{% if page.noMainContainer %} container{% endif %}">
 	<div class="row">
 		<div class="col-sm-6 col-md-5 col-lg-4">
 			<details class="brdr-0">
-				<summary class="btn btn-default text-center">{{ site.data.i18n[tmpl-feedback.lang] }}</summary>
+				<summary class="btn btn-default text-center">{{ i18n.tmpl-feedback[lang] | escape }}</summary>
 				<div class="well row">
-					{% include report-problem %}
+					{% include report-problem.html %}
 				</div>
 			</details>
 		</div>
@@ -15,7 +13,7 @@
 		{% endif %}
 	</div>
 	<dl id="wb-dtmd">
-		<dt>{{ site.data.i18n[tmpl-date-mod.lang] }}{{ site.data.i18n[space.lang] }}</dt>
+		<dt>{{ i18n.tmpl-date-mod[lang] | escape }}{{ i18n.space[lang] }}</dt>
 		<dd><time property="dateModified">{{ page.dateModified }}</time></dd>
 	</dl>
 </div>

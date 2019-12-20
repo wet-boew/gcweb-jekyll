@@ -1,25 +1,25 @@
 <aside class="prm-flpr">
 	<div class="container">
-		<h2 class="wb-inv">{{ site.data.i18n[tmpl-promo-title.lang] }}</h2>
+		<h2 class="wb-inv">{{ i18n.tmpl-promo-title[lang] | escape }}</h2>
 		<div class="wb-tabs carousel-s2 show-thumbs playing slow">
 			<ul role="tablist">
 				<li class="active">
-					<a href="#tab1"><img src="{{ assets }}/img/promos/1170x347-1.png" alt="" /><span class="wb-inv">{% if lang == "en" %}Tab 1: Banff National Park{% else %}Languette 1 : Parc national Banff{% endif %}</span></a>
+					<a href="#tab1"><img src="{{ assets }}/img/promos/{{ page.img-promo1 }}" alt="" /><span class="wb-inv">{% if lang == "en" %}Tab 1: {{ page.desc-promo1 }} {% else %}Languette 1 : {{ page.desc-promo1 }} {% endif %}</span></a>
 				</li>
 				<li>
-					<a href="#tab2"><img src="{{ assets }}/img/promos/1170x347-2.png" alt="" /><span class="wb-inv">{% if lang == "en" %}Tab 2: Algonquin Provincial Park{% else %}Languette 2 : Parc Provincial Algonquin{% endif %}</span></a>
+					<a href="#tab2"><img src="{{ assets }}/img/promos/{{ page.img-promo2 }}" alt="" /><span class="wb-inv">{% if lang == "en" %}Tab 2: {{ page.desc-promo2 }} {% else %}Languette 2 : {{ page.desc-promo2 }} {% endif %}</span></a>
 				</li>
 				<li>
-					<a href="#tab3"><img src="{{ assets }}/img/promos/1170x347-3.png" alt="" /><span class="wb-inv">{% if lang == "en" %}Tab 3: Rideau Canal{% else %}Languette 3 : Canal Rideau{% endif %}</span></a>
+					<a href="#tab3"><img src="{{ assets }}/img/promos/{{ page.img-promo3 }}" alt="" /><span class="wb-inv">{% if lang == "en" %}Tab 3: {{ page.desc-promo3 }} {% else %}Languette 3 : {{ page.desc-promo3 }} {% endif %}</span></a>
 				</li>
 			</ul>
 			<div class="tabpanels">
 				<div role="tabpanel" id="tab1" class="in fade">
 					<a href="#" class="learnmore">
 						<figure>
-							<img src="{{assets}}/img/promos/1170x347-1.png" alt="" />
+							<img src="{{ assets }}/img/promos/{{ page.img-promo1 }}" alt="" />
 							<figcaption>
-								<p>{% if lang == "en" %}Banff National Park {% else %} Parc national Banff{% endif %}</p>
+								<p>{{ page.desc-promo1 }}</p>
 							</figcaption>
 						</figure>
 					</a>
@@ -27,9 +27,9 @@
 				<div role="tabpanel" id="tab2" class="out fade">
 					<a href="#" class="learnmore">
 						<figure>
-							<img src="{{assets}}/img/promos/1170x347-2.png" alt="" />
+							<img src="{{assets}}/img/promos/{{ page.img-promo2 }}" alt="" />
 							<figcaption>
-								<p>{% if lang == "en" %}Algonquin Provincial Park {% else %} Parc Provincial Algonquin{% endif %}</p>
+								<p>{{ page.desc-promo2 }}</p>
 							</figcaption>
 						</figure>
 					</a>
@@ -37,9 +37,9 @@
 				<div role="tabpanel" id="tab3" class="out fade">
 					<a href="#" class="learnmore">
 						<figure>
-							<img src="{{assets}}/img/promos/1170x347-3.png" alt="" />
+							<img src="{{ assets }}/img/promos/{{ page.img-promo3 }}" alt="" />
 							<figcaption>
-								<p>{% if lang == "en" %}Rideau Canal {% else %} Canal Rideau{% endif %}</p>
+								<p>{{ page.desc-promo3 }}</p>
 							</figcaption>
 						</figure>
 					</a>
