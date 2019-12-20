@@ -1,0 +1,69 @@
+---
+layout: default
+---
+{% assign lang = page.lang %} {% assign i18n = site.data.i18n %}
+{% include promotion.html %}
+{% if page.secondarymenu == true %}
+<div class="container">
+  <div class="row">
+    <main property="mainContentOfPage" class="col-md-9 col-md-push-3" typeof="WebPageElement">
+{% else %}
+    <main property="mainContentOfPage" class="{% unless page.noMainContainer %} container {% endunless %}
+{% if page.pageType == 'institution' %} gc-instttn {% endif %}
+    {% if page.pageType == 'organization' %} gc-orgnztn {% endif %}
+    {% if page.pageType == 'theme' %} gc-theme {% endif %}
+    {% if page.pageType == 'news' %} gc-news {% endif %}
+    {% if page.pageType == 'advance service' %} gc-advnc-srvc {% endif %}" typeof="WebPageElement">{% endif %}
+{% unless page.noContentTitle %}
+  {% if page.pageclass != "page-type-nav" %}
+      <h1 property="name" id="wb-cont">{{ page.pagetitle }}</h1>{% endif %}{% endunless %}
+      {{ content }}
+      {% if page.deptfeature %}
+      <section class="gc-prtts">
+        <h2>{{ i18n.de-title[lang] | escape }}</h2>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mrgn-bttm-md">
+            <a href="#">
+              <figure>
+                <figcaption>{{ i18n.de-title-link[lang] | escape }}</figcaption>
+                <img src="{{ assets }}/img/{{ page.img-dept-feat1 }}" alt="" class="img-responsive thumbnail mrgn-bttm-sm"/>
+                <p>{{ i18n.de-description[lang] | escape }}</p>
+              </figure>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 mrgn-bttm-md">
+            <a href="#">
+              <figure>
+                <figcaption>{{ i18n.de-title-link[lang] | escape }}</figcaption>
+                <img src="{{ assets }}/img/{{ page.img-dept-feat2 }}" alt="" class="img-responsive thumbnail mrgn-bttm-sm"/>
+                <p>{{ i18n.de-description[lang] | escape }}</p>
+              </figure>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 mrgn-bttm-md">
+            <a href="#">
+              <figure>
+                <figcaption>{{ i18n.de-title-link[lang] | escape }}</figcaption>
+                <img src="{{ assets }}/img/{{ page.img-dept-feat3 }}" alt="" class="img-responsive thumbnail mrgn-bttm-sm"/>
+                <p>{{ i18n.de-description[lang] | escape }}</p>
+              </figure>
+            </a>
+          </div>
+        </div>
+      </section>
+{% endif %}
+{%if page.dateModified %}
+  {% include datemodified.html %}
+{% endif %}
+</main>
+{% if page.secondarymenu == true %}
+  <nav class="wb-sec col-md-3  col-md-pull-9" typeof="SiteNavigationElement" id="wb-sec" role="navigation">
+    <h2 id="wb-sec-h" class="wb-inv">{{ i18n.tmpl-section-menu[lang] | escape }}</h2>
+    {% include secondarymenu.html %}
+  </nav>
+</div>
+</div>
+{% endif %}
+{% if page.armslength == true %}
+  {% include armslength-footer.html %}}
+{% endif %}
