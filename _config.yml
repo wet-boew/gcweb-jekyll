@@ -41,6 +41,9 @@ sass:
 permalink: pretty  # Permalink style (/page-name/)
 excerpt_separator: <!-- more --> # Marks end of excerpt in posts
 timezone: America/Toront # Timezone for blog posts and alike
+quiet: false
+verbose: true
+themeJS: true
 
 # 5. Collections
 collections:
@@ -61,6 +64,8 @@ defaults:
       image: "/assets/default-social-image.png" # Default image for sharing
 
 # 7. Site settings
+assets: "https://wet-boew.github.io/themes-dist"
+theme-name: GCWeb
 encoding: utf-8 # Make sure the encoding is right
 lang: en-CA # Set the site language
 title: "gcweb-jekyll" # Site name or title, also used in jekyll-seo-tag
