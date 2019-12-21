@@ -1,5 +1,5 @@
 # Jekyll theme for GCweb
-[![Build Status](https://travis-ci.org/wet-boew/gcweb-jekyll.svg?branch=master)](https://travis-ci.org/wet-boew/gcweb-jekyll) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-gcweb.svg)](https://badge.fury.io/rb/jekyll-theme-gcweb)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](code-of-conduct.md) [![Build Status](https://travis-ci.org/wet-boew/gcweb-jekyll.svg?branch=master)](https://travis-ci.org/wet-boew/gcweb-jekyll) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-gcweb.svg)](https://badge.fury.io/rb/jekyll-theme-gcweb)
 
 *GCweb is a Jekyll theme for Government of Canada websites. You can [preview the theme to see what it looks like](http://wet-boew.github.io/gcweb-jekyll), or even [use it today](#usage).*
 
