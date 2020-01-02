@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["david.elisma@tbs-sct.gc.ca"]
 
   spec.summary       = "gcweb-jekyll is a GCweb variant for GC websites hosted on GitHub Pages"
-  spec.homepage      = "https://canada.ca"
+  spec.homepage      = "https://github.com/wet-boew/GCweb-jekyll"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(_data|_layouts|_includes|LICENSE|README)!i) }
