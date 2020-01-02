@@ -27,7 +27,7 @@ footer: true
 js: null
 lang: en # value can be: en | fr
 langtoggle: null # value can be: true | false | empty == false
-layout: page
+layout: home
 localnavHeadings: null 
 noContentTitle: #true | false
 noMainContainer: #true | false
