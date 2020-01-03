@@ -64,22 +64,23 @@ defaults:
       image: "/assets/default-social-image.png" # Default image for sharing
 
 # 7. Site settings
-assets: "https://wet-boew.github.io/themes-dist"
-theme-name: GCWeb
-encoding: utf-8 # Make sure the encoding is right
-lang: en-CA # Set the site language
-title: "gcweb-jekyll" # Site name or title, also used in jekyll-seo-tag
-logo: "/assets/logos/logo.svg" # Site logo, also used in jekyll-seo-tag
-description: "Jekyll variant for GCweb theme" # Site description and default description, also used in jekyll-seo-tag
-url: "https://canada.ca" # Site url, also used in jekyll-seo-tag
+assets: "dist/unmin"
 baseurl: ""
-repo: "https://github.com/wet-boew/gcweb-jekyll"
-email: " "
+css_inline: false # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
+description: "Jekyll variant for GCweb theme" # Site description and default description, also used in jekyll-seo-tag
 # disqus: " " # Blog post comments, uncomment the option and set the site ID from your Disqus account
+encoding: utf-8 # Make sure the encoding is right
+email: " "
 # google_analytics: ''
 # google_analytics_anonymize_ip: ''
+lang: en-CA # Set the site language
+logo: "/assets/logos/logo.svg" # Site logo, also used in jekyll-seo-tag
+repo: "https://github.com/wet-boew/gcweb-jekyll"
 # service_worker: false # Will turn off the service worker if set to false
-css_inline: false # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
+theme-name: GCWeb
+title: "gcweb-jekyll" # Site name or title, also used in jekyll-seo-tag
+url: "https://canada.ca" # Site url, also used in jekyll-seo-tag
+wetSiteRoot: "https://wet-boew.github.io/wet-boew"
 
 # 8. Site favicons & manifest icons
 favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
