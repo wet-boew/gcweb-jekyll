@@ -41,5 +41,26 @@
   "tmpl-finance": {"en": "Money and finances", "fr": "Argent et finances"},
   "tmpl-finance-desc": {"en": "Personal finance, credit reports, fraud protection, paying for education", "fr": "Finances personnelles, dossiers de crédit, se protéger de la fraude, financer votre éducation"},
   "tmpl-science": {"en": "Science and innovation", "fr": "Science et innovation"},
-  "tmpl-science-desc": {"en": "Scientific research on health, environment and space, grants and funding", "fr": "Recherche scientifique sur la santé, l'environnement et l'espace, subventions et financement"}
+  "tmpl-science-desc": {"en": "Scientific research on health, environment and space, grants and funding", "fr": "Recherche scientifique sur la santé, l'environnement et l'espace, subventions et financement"},
+  "tmpl-focus": {"en": "Focus on", "fr": ""},
+  "tmpl-indigenous": {"en": "Indigenous peoples", "fr": ""},
+  "tmpl-indigenous-desc": {"en": "Programs and services for First Nations, Inuit and Métis", "fr": ""},
+  "tmpl-veterans": {"en": "Veterans", "fr": ""},
+  "tmpl-veterans-desc": {"en": "Services for current and former military, <abbr title=\"Royal Canadian Mounted Police\">RCMP</abbr> and their families", "fr": ""},
+  "tmpl-youth": {"en": "Youth", "fr": ""},
+  "tmpl-youth-desc": {"en": "Programs and services for teenagers and young adults", "fr": ""}
 }
+/*   Your government
+  Contact us
+  Department and agency contacts, change your address
+  Departments and agencies
+  A list of current government and related organizations
+  How government works
+  Government structure, priorities, finances and regulations
+  Open government
+  Accessible government, open information and data, open dialogue
+  Government initiatives
+  [Feature hyperlink text]
+  Brief description of the feature being promoted.
+  [Feature hyperlink text]
+  Brief description of the feature being promoted. */
