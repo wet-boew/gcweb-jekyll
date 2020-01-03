@@ -8,15 +8,23 @@ layout: default
   <div class="row">
     <main property="mainContentOfPage" class="col-md-9 col-md-push-3" typeof="WebPageElement">
 {% else %}
-    <main property="mainContentOfPage" class="{% unless page.noMainContainer %} container {% endunless %}
-{% if page.pageType == 'institution' %} gc-instttn {% endif %}
-    {% if page.pageType == 'organization' %} gc-orgnztn {% endif %}
-    {% if page.pageType == 'theme' %} gc-theme {% endif %}
-    {% if page.pageType == 'news' %} gc-news {% endif %}
-    {% if page.pageType == 'advance service' %} gc-advnc-srvc {% endif %}" typeof="WebPageElement">{% endif %}
+    <main property="mainContentOfPage" class="{% unless page.noMainContainer %}container{% endunless %}
+    {% case page.pageType %}
+      {% when 'institution' %} 
+        gc-instttn
+      {% when 'organization' %} 
+        gc-orgnztn
+      {% when 'theme' %}
+        gc-theme
+      {% when 'news' %}
+        gc-news
+      {% when 'advance service' %}
+        gc-advnc-srvc
+    {% endcase %}" typeof="WebPageElement">{% endif %}
 {% unless page.noContentTitle %}
-  {% if page.pageclass != "page-type-nav" %}
-      <h1 property="name" id="wb-cont">{{ page.pagetitle }}</h1>{% endif %}{% endunless %}
+  {% assign navclass = page.pageclass | split: " " %}
+  {% unless navclass contains "page-type-nav" %}
+      <h1 property="name" id="wb-cont">{{ page.pagetitle }}</h1>{% endunless %}{% endunless %}
       {{ content }}
       {% if page.deptfeature %}
       <section class="gc-prtts">

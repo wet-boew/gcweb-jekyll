@@ -1,17 +1,11 @@
 ---
-altLangPrefix: home
-breadcrumbs: false
 layout: page
-noMainContainer: true
-noContentTitle: true
-pageClass: home page-type-nave
-share: true
 ---
 {% assign lang = page.lang %} {% assign i18n = site.data.i18n-home %}
 <div class="experimental bg-cover" data-bgimg="https://www.canada.ca/content/dam/canada/carousel/bkg-home-banner.jpg">
 	<div class="container p-0 p-sm-3">
 		<div class="well header-rwd brdr-0 brdr-rds-0 text-white bg-gctheme">
-			<h1 property="name" id="wb-cont">Canada.ca</h1>
+			<h1 property="name" id="wb-cont">{{ page.pagetitle }}</h1>
 			<p class="mrgn-tp-md">{{ i18n.byline[lang] }}</p>
 		</div>
 	</div>
@@ -115,19 +109,19 @@ share: true
 </section>
 
 <section class="gc-srvinfo container mrgn-bttm-lg">
-	<h2>Focus on</h2>
+	<h2>{{ i18n.tmpl-focus[lang] }}</h2>
 	<div class="wb-eqht row">
 		<div class="col-lg-4 col-md-6">
-			<h3><a href="https://www.aadnc-aandc.gc.ca/eng/1461766373625/1461766394598">Indigenous peoples</a></h3>
-			<p>Programs and services for First Nations, Inuit and Métis</p>
+			<h3><a href="https://www.aadnc-aandc.gc.ca/eng/1461766373625/1461766394598">{{ i18n.tmpl-indigenous[lang] | escape }}</a></h3>
+			<p>{{ i18n.tmpl-indigenous-desc[lang] | escape }}</p>
 		</div>
 		<div class="col-lg-4 col-md-6">
-			<h3><a href="https://www.canada.ca/en/services/veterans.html">Veterans</a></h3>
-			<p>Services for current and former military, <abbr title="Royal Canadian Mounted Police">RCMP</abbr> and their families</p>
+			<h3><a href="https://www.canada.ca/en/services/veterans.html">{{ i18n.tmpl-veterans[lang] | escape }}</a></h3>
+			<p>{{ i18n.tmpl-veterans-desc[lang] }}</p>
 		</div>
 		<div class="col-lg-4 col-md-6">
-			<h3><a href="https://www.canada.ca/en/services/youth.html">Youth</a></h3>
-			<p>Programs and services for teenagers and young adults</p>
+			<h3><a href="https://www.canada.ca/en/services/youth.html">{{ i18n.tmpl-youth[lang] | escape }}</a></h3>
+			<p>{{ i18n.tmpl-youth-desc[lang] | escape }}</p>
 		</div>
 	</div>
 </section>
@@ -166,7 +160,7 @@ share: true
 		<div class="col-sm-6">
 			<a class="figcaption" href="#">
 				<figure class="well well-sm brdr-rds-0">
-					<img class="img-responsive full-width" src="{{assets}}/img/520x200.png" alt=""/>
+					<img class="img-responsive full-width" src="{{ site.assets }}/img/520x200.png" alt=""/>
 					<figcaption class="h5">[Feature hyperlink text]</figcaption>
 					<p>Brief description of the feature being promoted.</p>
 				</figure>
@@ -175,7 +169,7 @@ share: true
 		<div class="col-sm-6">
 			<a class="figcaption" href="#">
 				<figure class="well well-sm brdr-rds-0">
-					<img class="img-responsive full-width" src="{{assets}}/img/520x200.png" alt=""/>
+					<img class="img-responsive full-width" src="{{ site.assets }}/img/520x200.png" alt=""/>
 					<figcaption class="h5">[Feature hyperlink text]</figcaption>
 					<p>Brief description of the feature being promoted.</p>
 				</figure>

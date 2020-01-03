@@ -8,7 +8,7 @@
     {% include metadata.html %}
     {% include headresources.html %}
   </head>
-  <body {% if page.pageclass %}class="{{ page.pageclass }}" {% endif %}vocab="http://schema.org/" typeof="WebPage">
+  <body {% if page.pageclass %} class="{{ page.pageclass }}" {% endif %}vocab="http://schema.org/" typeof="WebPage">
     {% if page.pageType == "archived" %}
     {% include archive.html %} 
     {% endif %}
