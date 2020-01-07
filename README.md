@@ -1,5 +1,5 @@
 # Jekyll theme for GCweb
-[![Build Status](https://travis-ci.org/pages-themes/gcweb-jekyll.svg?branch=master)](https://travis-ci.org/pages-themes/gcweb-jekyll) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-gcweb.svg)](https://badge.fury.io/rb/jekyll-theme-gcweb)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](code-of-conduct.md) [![Build Status](https://travis-ci.org/wet-boew/gcweb-jekyll.svg?branch=master)](https://travis-ci.org/wet-boew/gcweb-jekyll) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-gcweb.svg)](https://badge.fury.io/rb/jekyll-theme-gcweb)
 
 *GCweb is a Jekyll theme for Government of Canada websites. You can [preview the theme to see what it looks like](http://wet-boew.github.io/gcweb-jekyll), or even [use it today](#usage).*
 
@@ -58,7 +58,7 @@ If you'd like to add your own custom styles:
 
 If you'd like to change the theme's HTML layout:
 
-1. [Copy the original template](h/gttps:/ithub.com/wet-boew/gcweb-jekyll/blob/master/_layouts/default.html) from the theme's repository<br />(*Pro-tip: click "raw" to make copying easier*)
+1. [Copy the original template](https://github.com/wet-boew/gcweb-jekyll/blob/master/_layouts/default.html) from the theme's repository<br />(*Pro-tip: click "raw" to make copying easier*)
 2. Create a file called `/_layouts/default.html` in your site
 3. Paste the default layout content copied in the first step
 4. Customize the layout as you'd like
@@ -79,7 +79,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md)
 _(French version will be available shortly)_
 
 # Le thème Jekyll de GCweb
-[![Build Status](https://travis-ci.org/pages-themes/gcweb-jekyll.svg?branch=master)](https://travis-ci.org/pages-themes/gcweb-jekyll) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-gcweb.svg)](https://badge.fury.io/rb/jekyll-theme-gcweb)
+[![Build Status](https://travis-ci.org/wet-boew/gcweb-jekyll.svg?branch=master)](https://travis-ci.org/wet-boew/gcweb-jekyll) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-gcweb.svg)](https://badge.fury.io/rb/jekyll-theme-gcweb)
 
 *gcweb-jeckyll est un the Jekyll pour les sites web du gouvernement du Canada. Vous pouvez [voir un aperçu du thème pour avoir une idée de ce à quoi cela ressemble](http://wet-boew.github.io/gcweb-jekyll), ou sinon [vous pouvez l'utiliser maintenant](#utlisitation).*
 
@@ -138,7 +138,7 @@ If you'd like to add your own custom styles:
 
 If you'd like to change the theme's HTML layout:
 
-1. [Copy the original template](h/gttps:/ithub.com/wet-boew/gcweb-jekyll/blob/master/_layouts/default.html) from the theme's repository<br />(*Pro-tip: click "raw" to make copying easier*)
+1. [Copy the original template](https://github.com/wet-boew/gcweb-jekyll/blob/master/_layouts/default.html) from the theme's repository<br />(*Pro-tip: click "raw" to make copying easier*)
 2. Create a file called `/_layouts/default.html` in your site
 3. Paste the default layout content copied in the first step
 4. Customize the layout as you'd like

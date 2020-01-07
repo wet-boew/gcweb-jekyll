@@ -1,20 +1,76 @@
-exclude:
-  - node_modules
-  - script
+# Site configuration
+# 1. Files excluded from Jekyll builds
+# 2. Installed Gems
+# 3. Gem settings
+# 4. Jekyll settings
+# 5. Collections
+# 6. Jekyll collections settings
+# 7. Site settings
+# 8. Site favicons & manifest icons
+# 9. Site navigation
 
+# 1. Files excluded from Jekyll builds
+exclude: [ "README.md", "CODE_OF_CONDUCT.md", "CONTRIBUTING.md", "screenshot.png", "LICENSE.*", "SECURITY.md", "CNAME", "Gemfile", "Gemfile.lock", "gcweb-jekyll.gemspec", ".jekyll-cache", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
+
+# 2. Installed Gems
+
+# 3. Gem settings
+
+# 4. Jekyll settings
 sass:
-  style: :compressed
+  style: compressed # Style compression
+permalink: pretty  # Permalink style (/page-name/)
+excerpt_separator: <!-- more --> # Marks end of excerpt in posts
+timezone: America/Toront # Timezone for blog posts and alike
+quiet: false
+verbose: false
+themeJS: true
 
-theme: jekyll-theme-gcweb
+# 5. Collections
+collections:
+  posts:
+    title: Posts
+    output: true
+    description: "Jekyll variant for GCweb theme" # The post list page content
+#    feature_text: |
+#      Welcome to the blog
+#    feature_image: "https://picsum.photos/2560/600?image=866"
 
-github:
-  private: false
-  license:
-    name: MIT
-  source:
-    branch: "master"
-    path: "/"
-  repository_url: "https://github.com/wet-boew/GCweb-jekyll"
-  
-title: Jekyll Theme GCweb
-description: GCweb-jekyll is a Jekyll theme for GitHub Pages
+# 6. Jekyll collections settings
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+#      image: "/assets/default-social-image.png" # Default image for sharing
+
+# 7. Site settings
+assets: "https://wet-boew.github.io/themes-dist"
+baseurl: ""
+css_inline: false # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
+description: "Jekyll variant for GCweb theme" # Site description and default description, also used in jekyll-seo-tag
+encoding: utf-8 # Make sure the encoding is right
+email: " "
+# google_analytics: ''
+# google_analytics_anonymize_ip: ''
+lang: en-CA # Set the site language
+logo: "/assets/logos/logo.svg" # Site logo, also used in jekyll-seo-tag
+repo: "https://github.com/wet-boew/gcweb-jekyll"
+# service_worker: false # Will turn off the service worker if set to false
+theme-name: GCWeb
+title: "gcweb-jekyll" # Site name or title, also used in jekyll-seo-tag
+url: "https://canada.ca" # Site url, also used in jekyll-seo-tag
+wetSiteRoot: "https://wet-boew.github.io/wet-boew"
+
+# 8. Site favicons & manifest icons
+favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
+  # 16: '/assets/logos/logo@16px.png'
+  # 32: '/assets/logos/logo@32px.png'
+  # 96: '/assets/logos/logo@96px.png'
+  # 120: '/assets/logos/logo@120px.png'
+  # 144: '/assets/logos/logo@144px.png'
+  # 180: '/assets/logos/logo@180px.png'
+  # 512: '/assets/logos/logo@512px.png'
+  # 1024: '/assets/logos/logo@1024px.png'
+
+# 9. Site navigation

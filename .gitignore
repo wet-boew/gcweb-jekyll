@@ -1,7 +1,10 @@
-_site/
-node_modules
-.sass-cahae
 *.gem
+*.tmp
+.bundle
+.jekyll-cache
+.sass-cache
+_site
 Gemfile.lock
-assets/**/*.html
-assets/**/*.md
+.DS_Store
+*/.DS_Store
+.vscode
