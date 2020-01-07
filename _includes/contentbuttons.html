@@ -1,8 +1,0 @@
-
-{% if page.src contains "/docs/ref/" %}
-	{% if assets != "../.." %}
-<p>
-	<a class="btn btn-primary" href="https://github.com/wet-boew/{{ site.repository }}/issues/new?title={{ title | url_encode }}:%20">{% site.data.i18n[tmpl-questions-comments.lang] %}</a>
-</p>
-	{% endif %}
-{% endif %}
