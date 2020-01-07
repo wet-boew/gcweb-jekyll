@@ -13,27 +13,8 @@
 exclude: [ "README.md", "CODE_OF_CONDUCT.md", "CONTRIBUTING.md", "screenshot.png", "LICENSE.*", "SECURITY.md", "CNAME", "Gemfile", "Gemfile.lock", "gcweb-jekyll.gemspec", ".jekyll-cache", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
 
 # 2. Installed Gems
-# plugins: ["jekyll-sitemap", "jekyll-mentions", "jekyll-paginate", "jekyll-seo-tag", "jekyll-redirect-from", "jekyll-default-layout", "jekyll-feed", "jekyll-commonmark", "jekyll-include-cache", "jemoji"]
-# whitelist: []
 
 # 3. Gem settings
-# paginate: 2 # jekyll-paginate > items per page
-# paginate_path: blog/page:num # jekyll-paginate > blog page
-# jekyll-mentions: https://twitter.com # jekyll-mentions > service used when @replying
-# twitter:
-#   username: #@username # jekyll-seo-tag > Owners twitter username
-# author: #Authorsname # jekyll-seo-tag > default author
-# social: # jekyll-seo-tag > social overrides
-#   name: # Firstname Lastname # jekyll-seo-tag > real name
-#   links:  # jekyll-seo-tag > social aliases (sameAs)
-    # - https://twitter.com/[username]
-    # - https://www.facebook.com/[username]
-    # - https://www.linkedin.com/in/[username]
-    # - https://github.com/[username]
-# markdown: CommonMark # Markdown parse settings, CommonMark performs slightly better an others in build time
-# commonmark:
-  # options: ["SMART", "FOOTNOTES"]
-  # extensions: ["strikethrough", "autolink", "table"]
 
 # 4. Jekyll settings
 sass:
@@ -42,7 +23,7 @@ permalink: pretty  # Permalink style (/page-name/)
 excerpt_separator: <!-- more --> # Marks end of excerpt in posts
 timezone: America/Toront # Timezone for blog posts and alike
 quiet: false
-verbose: true
+verbose: false
 themeJS: true
 
 # 5. Collections
@@ -51,9 +32,9 @@ collections:
     title: Posts
     output: true
     description: "Jekyll variant for GCweb theme" # The post list page content
-    feature_text: |
-      Welcome to the blog
-    feature_image: "https://picsum.photos/2560/600?image=866"
+#    feature_text: |
+#      Welcome to the blog
+#    feature_image: "https://picsum.photos/2560/600?image=866"
 
 # 6. Jekyll collections settings
 defaults:
@@ -61,14 +42,13 @@ defaults:
     scope:
       path: ""
     values:
-      image: "/assets/default-social-image.png" # Default image for sharing
+#      image: "/assets/default-social-image.png" # Default image for sharing
 
 # 7. Site settings
-assets: "dist/unmin"
+assets: "https://wet-boew.github.io/themes-dist"
 baseurl: ""
 css_inline: false # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
 description: "Jekyll variant for GCweb theme" # Site description and default description, also used in jekyll-seo-tag
-# disqus: " " # Blog post comments, uncomment the option and set the site ID from your Disqus account
 encoding: utf-8 # Make sure the encoding is right
 email: " "
 # google_analytics: ''
@@ -94,22 +74,3 @@ favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
   # 1024: '/assets/logos/logo@1024px.png'
 
 # 9. Site navigation
-navigation_header:
-- title: Home
-  url: /
-
-navigation_footer:
-- title: 
-  url: 
-
-social_links: # Appears in sidebar. Set the urls then uncomment and comment out as desired
-  Twitter: https://twitter.com/[username]
-  LinkedIn: https://www.linkedin.com/in/[username]
-  GitHub: https://github.com/[username]
-  link: https://canada.ca
-  RSS: /feed.xml
-
-sharing_links: # Appear at the bottom of single blog posts, add as desired. The value can be 'true' or the desired button colour
-  Twitter: "#0d94e7"
-  facebook: "#3B5998"
-  Email: false
