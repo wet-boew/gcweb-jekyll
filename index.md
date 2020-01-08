@@ -1,13 +1,14 @@
 ---
-altLangPrefix: home
-altMenu: /assets/ajax/sitemenu-v5-en.html # ajax/menu-include
+altLangPrefix: index
 authorName: Service Canada
 authorUrl: 
+contentTitle: Canada.ca Jekyll theme
 css: 
   - url: "https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity: "sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
     x-origin: "anonymous"
-dateModified: 2020-01-02
+  - url: "./assets/css/custom.css"
+dateModified: 2020-01-08
 description:
   en: "Get quick, easy access to all Government of Canada services and information."
   fr: "Accédez rapidement et facilement à tous les services et renseignements du gouvernement du Canada."
@@ -16,9 +17,8 @@ lang: en
 langtoggle: true
 layout: page
 noContentTitle: true
-noMainContainer: true
-pageclass: "home page-type-nav" # value can be: splash | experimental | dark-theme | pnkDy-theme | page-type-nav | cnt-wdth-lmtd | page-type-search | theme | home
-pagetitle: Canada.ca # populates the title tag
+noMainContainer: false
+pageclass: "home page-type-nav"
 share: true
 sitemenu: true
 sitesearch: true
@@ -35,7 +35,7 @@ There should be whitespace between paragraphs.
 
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
 
-# Header 1
+# {{ page.contentTitle }}
 
 This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
 
@@ -123,7 +123,7 @@ end
 
 ### Large image
 
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
+![Branching](https://guides.github.com/activities/hello-world/branching.png#responsive )
 
 
 ### Definition lists can be used with HTML syntax.
