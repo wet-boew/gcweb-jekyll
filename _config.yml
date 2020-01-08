@@ -33,8 +33,6 @@ exclude:
 # 3. Gem settings
 
 # 4. Jekyll settings
-sass:
-  style: compressed # Style compression
 permalink: pretty  # Permalink style (/page-name/)
 excerpt_separator: <!-- more --> # Marks end of excerpt in posts
 timezone: America/Toronto # Timezone for blog posts and alike
