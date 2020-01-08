@@ -24,7 +24,7 @@ layout: default
 {% unless page.noContentTitle %}
   {% assign navclass = page.pageclass | split: " " %}
   {% unless navclass contains "page-type-nav" %}
-      <h1 property="name" id="wb-cont">{{ page.pagetitle }}</h1>{% endunless %}{% endunless %}
+      <h1 property="name" id="wb-cont">{{ page.contentTitle }}</h1>{% endunless %}{% endunless %}
       {{ content }}
       {% if page.deptfeature %}
       <section class="gc-prtts">
