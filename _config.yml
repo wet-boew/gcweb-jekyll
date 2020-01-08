@@ -21,7 +21,7 @@ sass:
   style: compressed # Style compression
 permalink: pretty  # Permalink style (/page-name/)
 excerpt_separator: <!-- more --> # Marks end of excerpt in posts
-timezone: America/Toront # Timezone for blog posts and alike
+timezone: America/Toronto # Timezone for blog posts and alike
 quiet: false
 verbose: false
 themeJS: true
@@ -42,7 +42,7 @@ defaults:
     scope:
       path: ""
     values:
-#      image: "/assets/default-social-image.png" # Default image for sharing
+      image: "/assets/default-social-image.png" # Default image for sharing
 
 # 7. Site settings
 assets: "https://wet-boew.github.io/themes-dist"
@@ -51,6 +51,7 @@ css_inline: false # Will insert all styles into a single <style> block in the <h
 description: "Jekyll variant for GCweb theme" # Site description and default description, also used in jekyll-seo-tag
 encoding: utf-8 # Make sure the encoding is right
 email: " "
+# adobe_analytics: ''
 # google_analytics: ''
 # google_analytics_anonymize_ip: ''
 lang: en-CA # Set the site language
