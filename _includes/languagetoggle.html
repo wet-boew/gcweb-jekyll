@@ -1,7 +1,7 @@
 	<section id="wb-lng" class="text-right">
-				<h2 class="wb-inv">{{ i18n.tmpl-lang-select[page.lang] | escape }}</h2>
+				<h2 class="wb-inv">{{ site.data.i18n.tmpl-lang-select[page.lang] | escape }}</h2>
 				<ul class="list-inline margin-bottom-none">{% if page.lang == "en" %}
-					<li><a lang="fr" hreflang="fr" href="{{ page.altLangPrefix }}-fr.html">{{ i18n.lang-native["fr"] | escape }}</a></li>{% endif %}{% if page.lang == "fr" %}
-					<li><a lang="en" hreflang="en" href="{{ page.altLangPrefix }}-en.html">{{ i18n.lang-native["en"] | escape }}</a></li>{% endif %}
+					<li><a lang="fr" hreflang="fr" href="{{ page.altLangPrefix }}-fr.html">{{ site.data.i18n.lang-native["fr"] | escape }}</a></li>{% endif %}{% if page.lang == "fr" %}
+					<li><a lang="en" hreflang="en" href="{{ page.altLangPrefix }}-en.html">{{ site.data.i18n.lang-native["en"] | escape }}</a></li>{% endif %}
 				</ul>
 			</section>

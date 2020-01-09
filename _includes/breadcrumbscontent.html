@@ -5,7 +5,7 @@
     {% endfor %}
 	{% else %}
 <li>
-	<a href="{{ site.wetSiteRoot }}/index-{{ page.lang }}.html">{{ i18n.tmpl-home[page.lang] | escape }}</a>
+	<a href="{{ site.wetSiteRoot }}/index-{{ page.lang }}.html">{{ site.data.i18n.tmpl-home[page.lang] | escape }}</a>
 </li>
 		{%if page.src contains "/demos/index" %}
 		{% else %}
@@ -14,14 +14,14 @@
 					{% if page.src contains "/index" %}
 					{% else %}
 <li>
-	<a href="{{ site.wetSiteRoot }}/docs/versions/index-{{ page.lang }}.html">{{ i18n.tmpl-version-history[page.lang] | escape }}</a>
+	<a href="{{ site.wetSiteRoot }}/docs/versions/index-{{ page.lang }}.html">{{ site.data.i18n.tmpl-version-history[page.lang] | escape }}</a>
 </li>
 					{% endif %}
 				{% else %}
 					{%if page.src contains "/docs/index" %}
 					{% else %}
 <li>
-	<a href="{{ site.wetSiteRoot }}/docs/index-{{ page.lang }}.html">{{ i18n.tmpl-documentation[page.lang] | escape }}</a>
+	<a href="{{ site.wetSiteRoot }}/docs/index-{{ page.lang }}.html">{{ site.data.i18n.tmpl-documentation[page.lang] | escape }}</a>
 </li>
 						{% if page.categoryfile == true %}
 <li>
@@ -32,7 +32,7 @@
 				{% endif %}
 			{% else %}
 <li>
-	<a href="{{ site.wetSiteRoot }}/demos/index-{{ page.lang }}.html">{{ i18n.tmpl-work-examples[page.lang] | escape }}</a>
+	<a href="{{ site.wetSiteRoot }}/demos/index-{{ page.lang }}.html">{{ site.data.i18n.tmpl-work-examples[page.lang] | escape }}</a>
 </li>
 				{% if page.breadcrumb3 == true %}
 					{% if tag contains "theme-wet-boew" %}
