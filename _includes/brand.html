@@ -1,16 +1,16 @@
 {% unless page.experimental %}
 				<div class="brand col-xs-5 col-md-4" property="publisher" typeof="GovernmentOrganization">
-					<a href="https://www.canada.ca/{{ lang }}.html" property="url">
-						<img src="{{ site.assets }}/{{ site.theme-name }}/assets/sig-blk-{{ lang }}.svg" alt="" property="logo" />
-						<span class="wb-inv" property="name"> {{ i18n.tmpl-gc-sig[lang] | escape }} / <span lang="{% if page.lang == 'en' %}fr">{{ i18n.tmpl-gc-sig["fr"] | escape }}{% else %}{{ i18n.tmpl-gc-sig["en"] | escape }}{% endif %}</span></span>
+					<a href="https://www.canada.ca/{{ page.lang }}.html" property="url">
+						<img src="{{ site.assets }}/{{ site.theme-name }}/assets/sig-blk-{{ page.lang }}.svg" alt="" property="logo" />
+						<span class="wb-inv" property="name"> {{ i18n.tmpl-gc-sig[page.lang] | escape }} / <span lang="{% if page.lang == 'en' %}fr">{{ i18n.tmpl-gc-sig["fr"] | escape }}{% else %}{{ i18n.tmpl-gc-sig["en"] | escape }}{% endif %}</span></span>
 					</a>
 					<meta property="areaServed" typeOf="Country" content="Canada" />
 					<link property="logo" href="{{ site.assets }}/{{ site.theme-name }}/assets/wmms-blk.svg" />
 				</div>
 {% else %}
 				<div class="brand col-xs-6">
-					<a href="https://www.canada.ca/{{ lang }}.html">
-						<span class="cndwrdmrk"><span class="wb-inv"> {{ i18n.tmpl-gc-wmms[lang] | escape }}</span></span>
+					<a href="https://www.canada.ca/{{ page.lang }}.html">
+						<span class="cndwrdmrk"><span class="wb-inv"> {{ i18n.tmpl-gc-wmms[page.lang] | escape }}</span></span>
 					</a>
 				</div>
 {% endunless %}
