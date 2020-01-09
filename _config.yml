@@ -11,22 +11,22 @@
 
 # 1. Files excluded from Jekyll builds
 exclude: 
-  - README.md
-		CODE_OF_CONDUCT.md
-		CONTRIBUTING.md
-		screenshot.png
-		LICENSE.*
-		SECURITY.md
-		CNAME
-		Gemfile
-		Gemfile.lock
-		gcweb-jekyll.gemspec
-		.jekyll-cache
-		node_modules
-		vendor/bundle/
-		vendor/cache/
-		vendor/gems/
-		vendor/ruby/
+- README.md
+- CODE_OF_CONDUCT.md
+- CONTRIBUTING.md
+- screenshot.png
+- LICENSE.*
+- SECURITY.md
+- CNAME
+- Gemfile
+- Gemfile.lock
+- gcweb-jekyll.gemspec
+- .jekyll-cache
+- node_modules
+- vendor/bundle/
+- vendor/cache/
+- vendor/gems/
+- vendor/ruby/
 
 # 2. Installed Gems
 
