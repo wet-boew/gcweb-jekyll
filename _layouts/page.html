@@ -62,6 +62,9 @@ layout: default
 {% endif %}
 {%if page.dateModified %}
   {% include datemodified.html %}
+{% else %}
+  {% assign date= "now" | date: "%Y-%m-%d" %}
+  {% include datemodified.html content=date %}
 {% endif %}
 </main>
 {% if page.secondarymenu == true %}

@@ -63,6 +63,26 @@ assets: "https://wet-boew.github.io/themes-dist"
 baseurl: ""
 css_inline: false # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
 description: "Jekyll variant for GCweb theme" # Site description and default description, also used in jekyll-seo-tag
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      css:
+        - url: "https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity: "sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          x-origin: "anonymous"
+      footer: true
+      layout: "page"
+      lang: "en"
+      langtoggle: true
+      noMainContainer: false
+      noContentTitle: false
+      share: true
+      sitemenu: true
+      sitesearch: true
+
 encoding: utf-8 # Make sure the encoding is right
 email: " "
 # adobe_analytics: ''
