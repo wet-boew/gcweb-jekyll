@@ -19,6 +19,6 @@
                   "url": "http://www.canada.ca/"
                }
             },
-            "description": "{% if page.description[lang] %}{{ page.description[lang] }}{% else %}{{ i18n.site-description[lang] }} {% endif %}"
+            "description": "{% if page.description[page.lang] %}{{ page.description[page.lang] }}{% else %}{{ i18n.site-description[page.lang] }} {% endif %}"
         }
     </script>
