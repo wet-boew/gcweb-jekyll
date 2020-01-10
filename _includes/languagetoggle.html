@@ -1,7 +1,8 @@
 	<section id="wb-lng" class="text-right">
 				<h2 class="wb-inv">{{ page.i18n.tmpl-lang-select[page.lang] }}</h2>
 				<ul class="list-inline margin-bottom-none">{% if page.lang == "en" %}
-					<li><a lang="fr" hreflang="fr" href="{{ page.altLangPrefix }}-fr.html">{{ page.i18n.tmpl-lang-native["fr"] }}</a></li>{% endif %}{% if page.lang == "fr" %}
-					<li><a lang="en" hreflang="en" href="{{ page.altLangPrefix }}-en.html">{{ page.i18n.tpml-lang-native["en"] }}</a></li>{% endif %}
+					<li><a lang="fr" hreflang="fr" href="{{ page.altLangPrefix }}-fr.html">{{ page.i18n.tmpl-lang-native["fr"] }}</a></li>{% endif %}
+					{% if page.lang == "fr" %}
+					<li><a lang="en" hreflang="en" href="{{ page.altLangPrefix }}-en.html">{{ page.i18n.tmpl-lang-native["en"] }}</a></li>{% endif %}
 				</ul>
 			</section>
