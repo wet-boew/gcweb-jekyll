@@ -265,6 +265,7 @@ defaults:
       langtoggle: true
       noMainContainer: false
       noContentTitle: false
+      permalink: /:basename:output_ext
       share: true
       sitemenu: true
       sitesearch: true
@@ -276,7 +277,6 @@ email: " "
 # google_analytics_anonymize_ip: ''
 lang: en-CA # Set the site language
 logo: "/assets/logos/logo.svg" # Site logo, also used in jekyll-seo-tag
-permalink: /:basename:output_ext
 repo: "https://github.com/wet-boew/gcweb-jekyll"
 # service_worker: false # Will turn off the service worker if set to false
 theme-name: GCWeb
