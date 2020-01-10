@@ -5,47 +5,12 @@
     {% endfor %}
 	{% else %}
 <li>
-	<a href="{{ site.wetSiteRoot }}/index-{{ page.lang }}.html">{{ site.data.i18n.tmpl-home[page.lang] | escape }}</a>
+	<a href="{{ site.wetSiteRoot }}/index-{{ page.lang }}.html">{{ page.i18n.tmpl-home[page.lang] | escape }}</a>
 </li>
-		{%if page.src contains "/demos/index" %}
-		{% else %}
-			{%if page.src contains "/docs/" %}
-				{%if page.src contains "/versions/" %}
-					{% if page.src contains "/index" %}
-					{% else %}
-<li>
-	<a href="{{ site.wetSiteRoot }}/docs/versions/index-{{ page.lang }}.html">{{ site.data.i18n.tmpl-version-history[page.lang] | escape }}</a>
-</li>
-					{% endif %}
-				{% else %}
-					{%if page.src contains "/docs/index" %}
-					{% else %}
-<li>
-	<a href="{{ site.wetSiteRoot }}/docs/index-{{ page.lang }}.html">{{ site.data.i18n.tmpl-documentation[page.lang] | escape }}</a>
-</li>
-						{% if page.categoryfile == true %}
-<li>
-	<a href="{{ site.wetSiteRoot }}/docs/ref/{{ page.categoryfile }}-{{ page.lang }}.html">{{ page.category }}</a>
-</li>
-						{% endif %}
-					{% endif %}
-				{% endif %}
-			{% else %}
-<li>
-	<a href="{{ site.wetSiteRoot }}/demos/index-{{ page.lang }}.html">{{ site.data.i18n.tmpl-work-examples[page.lang] | escape }}</a>
-</li>
-				{% if page.breadcrumb3 == true %}
-					{% if tag contains "theme-wet-boew" %}
-<li>
-	<a href="{{ site.wetSiteRoot }}/theme/index-{{ page.lang }}.html">{{ page.breadcrumb3-title }}</a>
-</li>
-					{% else %}
+		{% if page.breadcrumb3 == true %}
 <li>
 	<a href="{{ site.wetSiteRoot }}/demos/{{ page.tag }}/index-{{ page.lang }}.html">{{ page.breadcrumb3-title }}</a>
 </li>
-					{% endif %}
-				{% endif %}
-			{% endif %}
 		{% endif %}
 <li>{{ page.contentTitle }}</li>
 	{% endif %}

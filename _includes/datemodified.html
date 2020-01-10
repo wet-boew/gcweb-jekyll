@@ -2,7 +2,7 @@
 	<div class="row">
 		<div class="col-sm-6 col-md-5 col-lg-4">
 			<details class="brdr-0">
-				<summary class="btn btn-default text-center">{{ site.data.i18n.tmpl-feedback[page.lang] | escape }}</summary>
+				<summary class="btn btn-default text-center">{{ page.i18n.tmpl-feedback[page.lang] }}</summary>
 				<div class="well row">
 					{% include report-problem.html %}
 				</div>
@@ -13,7 +13,7 @@
 		{% endif %}
 	</div>
 	<dl id="wb-dtmd">
-		<dt>{{ site.data.i18n.tmpl-date-mod[page.lang] | escape }}{{ site.data.i18n.space[page.lang] }}</dt>
+		<dt>{{ page.i18n.tmpl-date-mod[page.lang] }}:{{ page.i18n.tmpl-space[page.lang] }}</dt>
 		<dd><time property="dateModified">{% if page.dateModified %}{{ page.dateModified }}{% else %}{{ include.content }}{% endif %}</time></dd>
 	</dl>
 </div>

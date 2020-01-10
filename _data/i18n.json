@@ -464,7 +464,7 @@
   "geo-geoloc-fail": {"en": "Geolocation failed. Please ensure that location services are enabled.", "fr": "Localisation a échoué. S'il vous plaît s'assurer que les services de localisation sont activés."},
   "geo-geoloc-uncapable": {"en": "Geolocation is not supported by your browser.", "fr": "Localisation n'est pas supporté par votre navigateur."},
   "geo-lgnd-grphc": {"en": "Legend graphic for map layer.", "fr": "Graphique légende couche cartographique."},
-  "wb-disable": {"en": "Switch to basic HTML versio", "fr": "Passer à la version HTML simplifiée"},
+  "wb-disable": {"en": "Switch to basic HTML version", "fr": "Passer à la version HTML simplifiée"},
   "wb-enable": {"en": "Switch to standard version", "fr": "Passer à la version standard"},
   "wb-basic-warning": {"en": "You are currently viewing in basic HTML.", "fr": "Vous visualisez actuellement en HTML simplifiée."},
   "disable-notice-h": {"en": "Notice: Basic HTML", "fr": "Avis : Version HTML simplifiée"},

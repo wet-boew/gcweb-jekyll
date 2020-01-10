@@ -2,7 +2,7 @@
 				<div class="brand col-xs-5 col-md-4" property="publisher" typeof="GovernmentOrganization">
 					<a href="https://www.canada.ca/{{ page.lang }}.html" property="url">
 						<img src="{{ site.assets }}/{{ site.theme-name }}/assets/sig-blk-{{ page.lang }}.svg" alt="" property="logo" />
-						<span class="wb-inv" property="name"> {{ site.data.i18n.tmpl-gc-sig[page.lang] | escape }} / <span lang="{% if page.lang == 'en' %}fr">{{ site.data.i18n.tmpl-gc-sig["fr"] | escape }}{% else %}{{ site.data.i18n.tmpl-gc-sig["en"] | escape }}{% endif %}</span></span>
+						<span class="wb-inv" property="name"> {{ page.i18n.tmpl-gc-sig[page.lang] }} / <span lang="{% if page.lang == 'en' %}fr">{{ page.i18n.tmpl-gc-sig["fr"] }}{% else %}{{ page.i18n.tmpl-gc-sig["en"] }}{% endif %}</span></span>
 					</a>
 					<meta property="areaServed" typeOf="Country" content="Canada" />
 					<link property="logo" href="{{ site.assets }}/{{ site.theme-name }}/assets/wmms-blk.svg" />
@@ -10,7 +10,7 @@
 {% else %}
 				<div class="brand col-xs-6">
 					<a href="https://www.canada.ca/{{ page.lang }}.html">
-						<span class="cndwrdmrk"><span class="wb-inv"> {{ i18n.tmpl-gc-wmms[page.lang] | escape }}</span></span>
+						<span class="cndwrdmrk"><span class="wb-inv"> {{ page.i18n.tmpl-gc-wmms[page.lang] }}</span></span>
 					</a>
 				</div>
 {% endunless %}

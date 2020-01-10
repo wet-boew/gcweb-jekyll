@@ -8,6 +8,7 @@ css:
 description:
   en: "Get quick, easy access to all Government of Canada services and information."
   fr: "Accédez rapidement et facilement à tous les services et renseignements du gouvernement du Canada."
+deptfeatures: true
 lang: en
 layout: page
 noContentTitle: true
