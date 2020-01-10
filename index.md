@@ -8,14 +8,18 @@ css:
 description:
   en: "Get quick, easy access to all Government of Canada services and information."
   fr: "Accédez rapidement et facilement à tous les services et renseignements du gouvernement du Canada."
-deptfeatures: true
 lang: en
 layout: page
 noContentTitle: true
+permalink: /index-en.html
 subject-en: [GV Government and Politics, Government services]
 subject-fr: [GV Gouvernement et vie politique, Services gouvernementaux]
 title: Home - Canada.ca
 ---
+
+# {{ page.contentTitle }}
+
+This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
@@ -25,9 +29,7 @@ There should be whitespace between paragraphs.
 
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
 
-# {{ page.contentTitle }}
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
 
 ## Header 2
 

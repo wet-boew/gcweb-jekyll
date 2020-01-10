@@ -4,9 +4,9 @@ description:
   en: This is just another page
 footer: true
 langtoggle: true
-layout: default
 lang: en
 noMainContainer: false
+permalink: /another-page.html
 sitemenu: true
 sitesearch: true
 title: Another page
@@ -16,4 +16,4 @@ title: Another page
 
 _yay_
 
-[back](./)
+[back](./index-{{ page.lang }}.html)
