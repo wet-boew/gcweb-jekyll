@@ -3,18 +3,17 @@ altLangPrefix: index
 authorName: Service Canada
 authorUrl: 
 contentTitle: Canada.ca Jekyll theme
-css: 
-  - url: "./assets/css/custom.css"
 description:
   en: "Get quick, easy access to all Government of Canada services and information."
   fr: "Accédez rapidement et facilement à tous les services et renseignements du gouvernement du Canada."
 lang: en
 layout: page
 noContentTitle: true
-permalink: /index-en.html
+pageclass: wb-prettify all-pre
+permalink: /
 subject-en: [GV Government and Politics, Government services]
 subject-fr: [GV Gouvernement et vie politique, Services gouvernementaux]
-title: Home - Canada.ca
+title: Test page - Canada.ca
 ---
 
 # {{ page.contentTitle }}
@@ -39,7 +38,7 @@ There should be whitespace between paragraphs. We recommend including a README, 
 
 ### Header 3
 
-```js
+```js 
 // Javascript code with syntax highlighting.
 var fun = function lang(l) {
   dateformat.i18n = require('./lang/' + l)
@@ -47,7 +46,7 @@ var fun = function lang(l) {
 }
 ```
 
-```ruby
+```ruby 
 # Ruby code with syntax highlighting
 GitHubPages::Dependencies.gems.each do |gem, version|
   s.add_dependency(gem, "= #{version}")
@@ -115,7 +114,7 @@ end
 
 ### Large image
 
-![Branching](https://guides.github.com/activities/hello-world/branching.png#responsive )
+![Branching](https://guides.github.com/activities/hello-world/branching.png){: .img-responsive}
 
 
 ### Definition lists can be used with HTML syntax.

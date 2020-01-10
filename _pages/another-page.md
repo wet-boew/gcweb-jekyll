@@ -6,7 +6,6 @@ footer: true
 langtoggle: true
 lang: en
 noMainContainer: false
-permalink: /another-page.html
 sitemenu: true
 sitesearch: true
 title: Another page
@@ -16,4 +15,4 @@ title: Another page
 
 _yay_
 
-[back](./index-{{ page.lang }}.html)
+[back](./)

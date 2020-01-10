@@ -15,9 +15,10 @@ exclude:
 - CODE_OF_CONDUCT.md
 - CONTRIBUTING.md
 - screenshot.png
-- LICENSE.*
+- LICENSE*
 - SECURITY.md
 - CNAME
+- "*.tmp"
 - Gemfile
 - Gemfile.lock
 - gcweb-jekyll.gemspec
@@ -33,10 +34,11 @@ exclude:
 # 3. Gem settings
 
 # 4. Jekyll settings
-permalink: pretty  # Permalink style (/page-name/)
 excerpt_separator: <!-- more --> # Marks end of excerpt in posts
-timezone: America/Toronto # Timezone for blog posts and alike
+include: ["_pages"]
+permalink: pretty  # Permalink style (/page-name/)
 quiet: false
+timezone: America/Toronto # Timezone for blog posts and alike
 verbose: false
 themeJS: true
 
@@ -274,6 +276,7 @@ email: " "
 # google_analytics_anonymize_ip: ''
 lang: en-CA # Set the site language
 logo: "/assets/logos/logo.svg" # Site logo, also used in jekyll-seo-tag
+permalink: /:basename:output_ext
 repo: "https://github.com/wet-boew/gcweb-jekyll"
 # service_worker: false # Will turn off the service worker if set to false
 theme-name: GCWeb
