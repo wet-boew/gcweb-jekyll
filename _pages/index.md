@@ -10,9 +10,10 @@ lang: en
 layout: page
 noContentTitle: true
 pageclass: wb-prettify all-pre
-permalink: /
-subject-en: [GV Government and Politics, Government services]
-subject-fr: [GV Gouvernement et vie politique, Services gouvernementaux]
+permalink: /index-en.html
+subject:
+  en: [GV Government and Politics, Government services]
+  fr: [GV Gouvernement et vie politique, Services gouvernementaux]
 title: Test page - Canada.ca
 ---
 
@@ -27,8 +28,6 @@ Text can be **bold**, _italic_, or ~~strikethrough~~.
 There should be whitespace between paragraphs.
 
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
-
-
 
 ## Header 2
 

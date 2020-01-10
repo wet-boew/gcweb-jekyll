@@ -1,18 +1,18 @@
 ---
 dateModified: 2020-01-08
 description: 
-  en: This is just another page
+  fr: Ceci est juste une autre page
 footer: true
 langtoggle: true
-lang: en
+lang: fr
 noMainContainer: false
 sitemenu: true
 sitesearch: true
-title: Another page
+title: Autre page
 ---
 
-## Welcome to another page
+## Bienvenue sur une autre page
 
-_yay_
+_Yay_
 
-[back](./index-en.html)
+[retour](./index-fr.html)
