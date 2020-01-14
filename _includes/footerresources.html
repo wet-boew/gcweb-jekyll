@@ -1,12 +1,8 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
   <script src="{{ site.assets }}/{{ site.theme-name }}/wet-boew/js/wet-boew.js"></script>
-  {% if page.javascript %}
-    {% for script in page.javascript %}
-     <script {% for element in script %}{% if element[0] == 'src' or element[0] == 'href' %}{{ element[0] }}="{{ element[1] | relative_url }}" {% else %}{{ element[0] }}="{{ element[1] }}" {% endif %}{% endfor %}></script>
-    {% endfor %}
-  {% endif %}
-  {% if site.themeJS == true %}}
+  {% if page.javascript %}{% for script in page.javascript %}<script {% for element in script %}{% if element[0] == 'src' or element[0] == 'href' %}{{ element[0] }}="{{ element[1] | relative_url }}" {% else %}{{ element[0] }}="{{ element[1] }}" {% endif %}{% endfor %}></script>{% endfor %}{% endif %}
+  {% if site.themeJS == true %}
   <script src="{{ site.assets }}/{{ site.theme-name }}/js/theme.js"></script>
   {% endif %}
   {% if section == "mobile-centre" %}<script src="{{ site.assets }}/js/whole-record-link.js"></script>{% endif %}
