@@ -1,7 +1,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
   <script src="{{ site.assets }}/{{ site.theme-name }}/wet-boew/js/wet-boew.js"></script>
-  {% if page.js == true %}{% for entry in page.js %}<script src="{{ entry }}.js"></script>{% endfor %}{% endif %}
+  {% if page.js == true %}{% for entry in page.js %}{{ entry }}{% endfor %}{% endif %}
   {% if site.themeJS == true %}
   <script src="{{ site.assets }}/{{ site.theme-name }}/js/theme.js"></script>
   {% endif %}
