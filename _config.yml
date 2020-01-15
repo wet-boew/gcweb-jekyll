@@ -6,8 +6,6 @@
 # 5. Collections
 # 6. Jekyll collections settings
 # 7. Site settings
-# 8. Site favicons & manifest icons
-# 9. Site navigation
 
 # 1. Files excluded from Jekyll builds
 exclude: 
@@ -34,46 +32,32 @@ exclude:
 # 3. Gem settings
 
 # 4. Jekyll settings
-excerpt_separator: <!-- more --> # Marks end of excerpt in posts
 include: ["_pages"]
-permalink: pretty  # Permalink style (/page-name/)
 quiet: false
 timezone: America/Toronto # Timezone for blog posts and alike
-verbose: false
 themeJS: true
+verbose: false
 
 # 5. Collections
-collections:
-  posts:
-    title: Posts
-    output: true
-    description: "Jekyll variant for GCweb theme" # The post list page content
-#    feature_text: |
-#      Welcome to the blog
-#    feature_image: "https://picsum.photos/2560/600?image=866"
 
 # 6. Jekyll collections settings
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      image: "/assets/default-social-image.png" # Default image for sharing
 
 # 7. Site settings
+analytics_adobe: ""
+analytics_google: ""
+analytics_google_anonymize_ip: ""
 assets: "https://wet-boew.github.io/themes-dist"
 baseurl: ""
-css:
-  - url: "https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity: "sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-    x-origin: "anonymous"
 css_inline: false # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
-description: "Jekyll variant for GCweb theme" # Site description and default description, also used in jekyll-seo-tag
+description: 
+  en: "Jekyll variant for GCWeb theme" # English site description and default description
+  fr: "Adaption Jekyll du theme GCWeb" # French site description and default description
 
 defaults:
   -
     scope:
       path: ""
+      type: pages
     values:
       footer: true
       i18n:
@@ -261,38 +245,24 @@ defaults:
           en: You are here
           fr: Vous êtes ici&#160;
       layout: "page"
+      javascript:
       lang: "en"
       langtoggle: true
       noMainContainer: false
       noContentTitle: false
-      permalink: /:basename:output_ext
+      permalink: :path/:basename
       share: true
       sitemenu: true
       sitesearch: true
 
 encoding: utf-8 # Make sure the encoding is right
-email: " "
-# adobe_analytics: ''
-# google_analytics: ''
-# google_analytics_anonymize_ip: ''
-lang: en-CA # Set the site language
-logo: "/assets/logos/logo.svg" # Site logo, also used in jekyll-seo-tag
+email: ""
 repo: "https://github.com/wet-boew/gcweb-jekyll"
 # service_worker: false # Will turn off the service worker if set to false
+stylesheets:
+  - href: "https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity: "sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin: "anonymous"
 theme-name: GCWeb
-title: "gcweb-jekyll" # Site name or title, also used in jekyll-seo-tag
-url: "https://canada.ca" # Site url, also used in jekyll-seo-tag
+title: "gcweb-jekyll" # Site name or title
 wetSiteRoot: "https://wet-boew.github.io/wet-boew"
-
-# 8. Site favicons & manifest icons
-favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
-  # 16: '/assets/logos/logo@16px.png'
-  # 32: '/assets/logos/logo@32px.png'
-  # 96: '/assets/logos/logo@96px.png'
-  # 120: '/assets/logos/logo@120px.png'
-  # 144: '/assets/logos/logo@144px.png'
-  # 180: '/assets/logos/logo@180px.png'
-  # 512: '/assets/logos/logo@512px.png'
-  # 1024: '/assets/logos/logo@1024px.png'
-
-# 9. Site navigation

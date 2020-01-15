@@ -15,4 +15,4 @@ title: Another page
 
 _yay_
 
-[back](./index-en.html)
+[back](./)

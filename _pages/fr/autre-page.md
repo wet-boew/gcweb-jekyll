@@ -13,6 +13,6 @@ title: Autre page
 
 ## Bienvenue sur une autre page
 
-_Yay_
+_Yé_
 
-[retour](./index-fr.html)
+[retour](./)

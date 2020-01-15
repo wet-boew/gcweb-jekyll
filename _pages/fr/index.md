@@ -11,8 +11,9 @@ layout: page
 noContentTitle: true
 pageclass: wb-prettify all-pre
 permalink: /index-fr.html
-subject-en: [GV Government and Politics, Government services]
-subject-fr: [GV Gouvernement et vie politique, Services gouvernementaux]
+subject:
+  en: [GV Government and Politics, Government services]
+  fr: [GV Gouvernement et vie politique, Services gouvernementaux]
 title: Test page - Canada.ca
 ---
 
