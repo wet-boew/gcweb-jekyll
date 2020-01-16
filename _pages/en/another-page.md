@@ -1,4 +1,5 @@
 ---
+altLangPrefix: autre-page
 dateModified: 2020-01-08
 description: 
   en: This is just another page

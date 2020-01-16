@@ -10,7 +10,6 @@ lang: en
 layout: page
 noContentTitle: true
 pageclass: wb-prettify all-pre
-permalink: /index-en.html
 subject:
   en: [GV Government and Politics, Government services]
   fr: [GV Gouvernement et vie politique, Services gouvernementaux]

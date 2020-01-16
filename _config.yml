@@ -32,7 +32,6 @@ exclude:
 # 3. Gem settings
 
 # 4. Jekyll settings
-include: ["_pages"]
 quiet: false
 timezone: America/Toronto # Timezone for blog posts and alike
 themeJS: true
@@ -41,6 +40,16 @@ verbose: false
 # 5. Collections
 
 # 6. Jekyll collections settings
+collections:
+  pages:
+    output: true
+    permalink: /:path
+  layout:
+    name: home
+    values:
+      altLangPrefix: home
+      layout: page
+      pageclass: home
 
 # 7. Site settings
 analytics_adobe: ""
@@ -238,6 +247,9 @@ defaults:
         tmpl-space:
           en: "&#32;"
           fr: "&#32;"
+        tmpl-terms:
+          en: Terms and conditions
+          fr: Avis
         tmpl-toppage: 
           en: Top of Page
           fr: Haut de la page
@@ -250,7 +262,6 @@ defaults:
       langtoggle: true
       noMainContainer: false
       noContentTitle: false
-      permalink: :path/:basename
       share: true
       sitemenu: true
       sitesearch: true
