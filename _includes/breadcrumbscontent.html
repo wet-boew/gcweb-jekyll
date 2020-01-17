@@ -1,17 +1,12 @@
 {% unless page.pageclass contains "home" %}
-	{% if page.breadcrumbs %}
+  {% if page.breadcrumbs %}
     {% for entry in page.breadcrumbs %}
       <li><a href="{{ entry.link }}">{{ entry.title }}</a></li>
     {% endfor %}
-	{% else %}
+  {% else %}
 <li>
-	<a href="{{ site.wetSiteRoot }}/index-{{ page.lang }}.html">{{ page.i18n.tmpl-home[page.lang] | escape }}</a>
+  <a href="{{ site.wetSiteRoot }}/index-{{ page.lang }}.html">{{ page.i18n.tmpl-home[page.lang] | escape }}</a>
 </li>
-		{% if page.breadcrumb3 == true %}
-<li>
-	<a href="{{ site.wetSiteRoot }}/demos/{{ page.tag }}/index-{{ page.lang }}.html">{{ page.breadcrumb3-title }}</a>
-</li>
-		{% endif %}
 <li>{{ page.contentTitle }}</li>
-	{% endif %}
+  {% endif %}
 {% endunless %}
