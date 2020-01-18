@@ -1,3 +1,6 @@
+---
+layout: compress
+---
 <!DOCTYPE html>{% assign lang = page.lang %}
 <html class="no-js" lang="{{ lang | default: 'en' }}" dir="{{ page.i18n.tmpl-lang-dir[lang] }}">
   <head>
@@ -8,16 +11,17 @@
     {% include metadata.html %}
     {% include headresources.html %}
   </head>
-  <body {% if page.pageclass %} class="{{ page.pageclass }}" {% endif %}vocab="http://schema.org/" typeof="WebPage">
+  <!-- <body {% if pageclass %} class="{{ pageclass }}" {% endif %}vocab="http://schema.org/" typeof="WebPage"> -->
+  <body {% if page.layout != "page" or "default" %} class="{{ page.layout }}" {% endif %}vocab="http://schema.org/" typeof="WebPage">
     {% if page.pageType == "archived" %}
-    {% include archive.html %} 
+    {% include archive.html %}
     {% endif %}
     {% include skiplinks.html %}
     {% include header.html %}
     <!-- Static header ends -->
-    {{ content }}
+     {{ content }}
     <!-- Static footer starts -->
     {% include footer.html %}
-    {% include footerresources.html %} 
+    {% include footerresources.html %}
   </body>
 </html>

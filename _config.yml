@@ -8,7 +8,7 @@
 # 7. Site settings
 
 # 1. Files excluded from Jekyll builds
-exclude: 
+exclude:
 - README.md
 - CODE_OF_CONDUCT.md
 - CONTRIBUTING.md
@@ -32,6 +32,13 @@ exclude:
 # 3. Gem settings
 
 # 4. Jekyll settings
+compress_html:
+  clippings: all
+  comments:
+  ignore:
+    envs: []
+  blanklines: true
+  profile: false
 quiet: false
 timezone: America/Toronto # Timezone for blog posts and alike
 themeJS: true
@@ -58,7 +65,7 @@ analytics_google_anonymize_ip: ""
 assets: "https://wet-boew.github.io/themes-dist"
 baseurl: ""
 css_inline: false # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
-description: 
+description:
   en: "Jekyll variant for GCWeb theme" # English site description and default description
   fr: "Adaption Jekyll du theme GCWeb" # French site description and default description
 
@@ -70,7 +77,7 @@ defaults:
     values:
       footer: true
       i18n:
-        tmpl-about-government: 
+        tmpl-about-government:
           en: About government
           fr: Au sujet du gouvernement
         tmpl-about-site:
@@ -83,7 +90,7 @@ defaults:
           en: You can use it for research or reference.
           fr: ous pouvez la consulter à des fins de recherche ou à titre de référence.
         tmpl-archive-title:
-          en: We have archived this page and will not be updating it., 
+          en: We have archived this page and will not be updating it.,
           fr: Nous avons archivé cette page et elle ne sera plus mise à jour.
         tmpl-arms-description:
           en: We are a federal institution that is part of the [portfolio name] portfolio. We operate at arm’s length from the Government of Canada.
@@ -106,7 +113,7 @@ defaults:
         tmpl-feedback:
           en: Report a problem on this page
           fr: Signaler un problème sur cette page
-        tmpl-gc-sig: 
+        tmpl-gc-sig:
           en: Government of Canada
           fr: Gouvernement du Canada
         tmpl-gc-wmms:
@@ -250,7 +257,7 @@ defaults:
         tmpl-terms:
           en: Terms and conditions
           fr: Avis
-        tmpl-toppage: 
+        tmpl-toppage:
           en: Top of Page
           fr: Haut de la page
         tmpl-you-are-here:

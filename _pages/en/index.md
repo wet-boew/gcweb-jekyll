@@ -1,21 +1,21 @@
 ---
 altLangPrefix: index
 authorName: Service Canada
-authorUrl: 
+authorUrl:
 contentTitle: Canada.ca Jekyll theme
+dateModified: 2020-01-10
 description:
   en: "Get quick, easy access to all Government of Canada services and information."
   fr: "Accédez rapidement et facilement à tous les services et renseignements du gouvernement du Canada."
+footer: true
 lang: en
 layout: page
 noContentTitle: true
-pageclass: wb-prettify all-pre
 subject:
   en: [GV Government and Politics, Government services]
   fr: [GV Gouvernement et vie politique, Services gouvernementaux]
 title: Test page - Canada.ca
 ---
-
 # {{ page.contentTitle }}
 
 This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
@@ -36,7 +36,7 @@ There should be whitespace between paragraphs. We recommend including a README, 
 
 ### Header 3
 
-```js 
+```js
 // Javascript code with syntax highlighting.
 var fun = function lang(l) {
   dateformat.i18n = require('./lang/' + l)
@@ -44,7 +44,7 @@ var fun = function lang(l) {
 }
 ```
 
-```ruby 
+```ruby
 # Ruby code with syntax highlighting
 GitHubPages::Dependencies.gems.each do |gem, version|
   s.add_dependency(gem, "= #{version}")
