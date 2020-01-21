@@ -264,7 +264,7 @@ defaults:
           en: You are here
           fr: Vous êtes ici&#160;
       layout: "page"
-      javascript:
+      javascripts:
       lang: "en"
       langtoggle: true
       noMainContainer: false
@@ -272,6 +272,7 @@ defaults:
       share: true
       sitemenu: true
       sitesearch: true
+      stylesheets:
 
 encoding: utf-8 # Make sure the encoding is right
 email: ""
