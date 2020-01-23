@@ -1,8 +1,8 @@
 ---
 layout: compress
 ---
-<!DOCTYPE html>{% assign lang = page.lang %}
-<html class="no-js" lang="{{ lang | default: 'en' }}" dir="{{ page.i18n.tmpl-lang-dir[lang] }}">
+<!DOCTYPE html>
+<html class="no-js" lang="{{ page.lang | default: 'en' }}" dir="{{ page.i18n.tmpl-lang-dir[page.lang] }}">
   <head>
     <meta charset="utf-8">
     {% include license.html %}
