@@ -1,7 +1,7 @@
 {% unless page.pageclass contains "home" %}
   {% if page.breadcrumbs %}
-    {% for entry in page.breadcrumbs %}
-      <li><a href="{{ entry.link }}">{{ entry.title }}</a></li>
+    {% for breadcrumb in page.breadcrumbs %}
+      <li><a href="{{ breadcrumb.link | relative_url }}">{{ breadcrumb.title }}</a></li>
     {% endfor %}
   {% else %}
 <li>
