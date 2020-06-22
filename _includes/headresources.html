@@ -1,5 +1,5 @@
 <link href="{{ site.assets }}/{{ site.theme-name }}/assets/favicon.ico" rel="icon" type="image/x-icon" />
-    <link rel="stylesheet" href="{{ site.assets }}/{{ site.theme-name }}/css/theme.css" />
+    <link rel="stylesheet" href="{{ site.assets }}/{{ site.theme-name }}/css/theme.css" integrity="sha256-pCotPlGPXSYSvbdRQTkGxIKMVKy3YJjrjGdmlTKzrNo=" crossorigin="anonymous" />
     {% if site.stylesheets %}{% for sheet in site.stylesheets %}<link rel="stylesheet" {% for entry in sheet %}{% if entry[0] == 'href' %}{{ entry[0] }}="{{ entry[1] | relative_url }}" {% else %}{{ entry[0] }}="{{ entry[1] }}" {% endif %}{% endfor %}/>{% endfor %}{% endif %}
     {% if page.stylesheets %}{% for sheet in page.stylesheets %}<link rel="stylesheet" {% for entry in sheet %}{% if entry[0] == 'href' %}{{ entry[0] }}="{{ entry[1] | relative_url }}" {% else %}{{ entry[0] }}="{{ entry[1] }}" {% endif %}{% endfor %}/>{% endfor %}{% endif %}
 

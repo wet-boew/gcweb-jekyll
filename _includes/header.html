@@ -1,10 +1,10 @@
 
 	<header>
 		<div id="wb-bnr" class="container">
-		{% if page.langtoggle %}{% include languagetoggle.html %}{% endif %}
 			<div class="row">
-			{% include brand.html %}
-			{% if page.sitesearch %}{% include sitesearch.html %}{% endif %}
+				{% if page.langtoggle %}{% include languagetoggle.html %}{% endif %}
+				{% include brand.html %}
+				{% if page.sitesearch %}{% include sitesearch.html %}{% endif %}
 			</div>
 		</div>
 	{% if page.sitemenu %}
