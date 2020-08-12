@@ -630,6 +630,7 @@
   "tmpl-contribute-develop": {"en": "Developing for WET", "fr": "Développer pour la BOEW"},
   "tmpl-contribute-docs": {"en": "Creating documentation Écrire la documentation"},
   "tmpl-guides": {"en": "Guides", "fr": "Guides"},
+
   "tmpl-promote-wet": {"en": "Promote WET", "fr": "Promotion de la BOEW"},
   "tmpl-events": {"en": "Events", "fr": "Événements"},
   "tmpl-design-guide": {"en": "Design guide", "fr": "Guide de conception"},
