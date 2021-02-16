@@ -11,8 +11,10 @@ layout: core
 		Page untitled
 	{%- endif -%}
 {%- endcapture -%}
-<main class="container" property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement">
+<main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement">
+<div class="container-fluid">
 <h1 id="wb-cont" property="name">{{ page-title }}</h1>
 {{ content }}
-{% include main-footer/inc-footer.html %}
+</div>
+{% include main-footer/inc-footer.html isFluid=true %}
 </main>
