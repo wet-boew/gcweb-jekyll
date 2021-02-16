@@ -263,7 +263,8 @@ defaults:
         tmpl-you-are-here:
           en: You are here
           fr: Vous êtes ici&#160;
-      layout: "page"
+#      layout: "page"
+      layout: default
       javascripts:
       lang: "en"
       langtoggle: true

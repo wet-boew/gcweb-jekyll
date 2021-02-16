@@ -1,13 +1,14 @@
 ---
 altLangPrefix: index
 authorName: Service Canada
-authorUrl: 
+authorUrl:
 contentTitle: Canada.ca Jekyll theme
 description:
   en: "Get quick, easy access to all Government of Canada services and information."
   fr: "Accédez rapidement et facilement à tous les services et renseignements du gouvernement du Canada."
 lang: fr
-layout: page
+#layout: page
+layout: default
 noContentTitle: true
 pageclass: wb-prettify all-pre
 subject:
@@ -36,7 +37,7 @@ Il devrait y avoir un espace entre les paragraphes. Nous vous recommandons d'inc
 
 ### En-tête 3
 
-```js 
+```js
 // Code Javascript avec coloration syntaxique.
 var fun = function lang(l) {
   dateformat.i18n = require('./lang/' + l)
@@ -44,7 +45,7 @@ var fun = function lang(l) {
 }
 ```
 
-```ruby 
+```ruby
 # Code Ruby avec coloration syntaxique
 GitHubPages::Dependencies.gems.each do |gem, version|
   s.add_dependency(gem, "= #{version}")
