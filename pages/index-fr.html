@@ -1,0 +1,77 @@
+---
+title: Creation de page web
+description: Comment créer une page avec le thème gcweb-jekyll
+lang: fr
+dateModified: 2021-06-15
+---
+
+<h2>Paramètres de la page</h2>
+
+<p>Seul un titre est requis, mais il est préférable de définir les paramètres suivants au minimum:</p>
+
+<dl>
+  <dt><code>title</code></dt>
+  <dd>Titre de la page web</dd>
+  <dt><code>description</code></dt>
+  <dd>Description de la page</dd>
+  <dt><code>lang</code></dt>
+  <dd>Langue de la page courant en format ISO, tel que "en", "fr".</dd>
+  <dt><code>altLangPage</code></dt>
+  <dd>Lien vers la page alternative dans l'autre langue officiel.</dd>
+  <dt><code>dateModified</code></dt>
+  <dd>Date de modification de la page en format ISO, AAAA-MM-JJ.</dd>
+</dl>
+
+<p>Si le paramètre <code>altLangPage</code> est omis, le liens vers la page alternative ne sera pas ajouter dans le coin supérieur droit.</p>
+
+<p>Définir le type de gabarit (<span lang="en">layout</span>) à utiliser.</p>
+<dl>
+  <dt><code>layout: default</code></dt>
+  <dd>Gabarit de base et utilisé majoritairement pour la création de page de contenu. Ce paramètre est requis lorsqu'il n'est pas défini comme paramètre par défaut dans la configuration du site. (<code>_config.yml</code>)</dd>
+  <dt><code>layout: fluid</code></dt>
+  <dd>Gabarit de base mais avec un contenu fluide. Toute la largeur de la page sera utilisable.</dd>
+  <dt><code>layout: no-container</code></dt>
+  <dd>Gabarit de base mais avec aucun conteneur de défini ni de titre de niveau 1. Ce gabarit assume que le titre de niveau 1 ainsi que l'une ou l'autre des class CSS délimitant le contenu sera ajouté par l'éditeur web. Les classes CSS de délimitation de contenu possible sont: <code>container</code> et <code>container-fluid</code>un contenu fluide.</dd>
+  <dt><code>layout: without-h1</code></dt>
+  <dd>Gabarit de base mais avec sans titre de niveau 1. L'éditeur web devra l'ajouté directement dans le contenu de la page web.</dd>
+</dl>
+
+<p>Les paramètres suivant sont optionnel mais disponible au besoin</p>
+
+<dl>
+  <dt><code>titleH1</code></dt>
+  <dd>Si définie, ce texte sera utilisé pour le titre du niveau 1 de la page et l'autre paramètre <code>title</code> sera utilisé pour nommé la page web.</dd>
+  <dt><code>nositesearch</code></dt>
+  <dd>Valeur Booléenne, lorsqu'ajouter avec une valeur "vrai", la recherche de la page, en haut à droite, ne sera pas ajouté.</dd>
+  <dt><code>nomenu</code></dt>
+  <dd>Valeur Booléenne, lorsqu'ajouter avec une valeur "vrai", le menu prinicipal ne sera pas ajouté.</dd>
+  <dt><code>pageType</code></dt>
+  <dd>Définie le type de la page, s'il contient la valeur "archived", la bannière d'archive sera ajouté à la page. (Note technique: prendre en considération d'utilisé une propriété nommé "state" à la place)</dd>
+  
+  
+   <dt><code>breadcrumbs</code></dt>
+  <dd>
+    <p>Liste contenant un item du fil d'ariane. Chaque item est composé d'un objet avec les propriétés suivantes:</p>
+    <dl class="dl-horizontal">
+      <dt><code>link</code></dt>
+      <dd>Liens de l'item du fil d'ariane</dd>
+      <dt><code>title</code></dt>
+      <dd>Titre de l'item du fil d'ariane</dd>
+    </dl>
+    
+    <p>L'ordre du fil d'ariane configuré vas du parents vers l'enfant.</p>
+  </dd>
+</dl>
+  
+
+<h2>Language de codification de la page</h2>
+ 
+<p>Les paramètres de la page (<span lang="en">Front-matter</span>) peut être codifié en format YML ou en format JSON.</p>
+<p>Le contenu de la page peut être codé avec en mark down ou en html. Le language du contenu est définie par l'extension du fichier éditié. Par example, l'extension <code>.md</code> indique que le contenu de la page est en format "mark down" et l'extension <code>.html</code> indique que le contenu de la page est en format "HTML".</p>
+
+<h2>Ressource additionelle</h2>
+
+<ul>
+  <li><a href="https://github.com/wet-boew/gcweb-jekyll-website">Site web squelettique d'example d'utilisation du thème Jekyll de Canada.ca</a></li>
+  <li><a href="https://jekyllrb.com/docs/variables/#page-variables" hreflang="en">List des paramètres de pages disponible et géré par Jekyll (En anglais seulement)</a></li>
+</ul>
