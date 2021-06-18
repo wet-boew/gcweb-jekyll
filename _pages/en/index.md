@@ -2,8 +2,8 @@
 altLangPage: /fr/index
 dateModified: 2021-06-31
 description:
-lang: en
 layout: layout-home
+title: GCWeb Jekyll
 ---
 <div class="provisional bg-cover" data-bgimg="/assets/img/bkg-home-banner-spring.jpg">
   <div class="container p-0 p-sm-3">
