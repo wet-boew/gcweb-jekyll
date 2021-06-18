@@ -1,7 +1,7 @@
 ---
 altLangPrefix: autre-page
 dateModified: 2020-01-08
-description: 
+description:
   en: This is just another page
 footer: true
 langtoggle: true
@@ -16,4 +16,4 @@ title: Another page
 
 _yay_
 
-[back](./)
+[back](./test-page.html)
