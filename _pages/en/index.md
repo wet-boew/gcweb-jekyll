@@ -1,135 +1,45 @@
 ---
-altLangPrefix: index
-authorName: Service Canada
-authorUrl:
-contentTitle: Canada.ca Jekyll theme
-dateModified: 2020-01-10
+altLangPage: /fr/index
+dateModified: 2021-06-31
 description:
-  en: "Get quick, easy access to all Government of Canada services and information."
-  fr: "Accédez rapidement et facilement à tous les services et renseignements du gouvernement du Canada."
-noContentTitle: true
-pageclass: wb-prettify all-pre
-subject:
-  en: [GV Government and Politics, Government services]
-  fr: [GV Gouvernement et vie politique, Services gouvernementaux]
-title: Test page - Canada.ca
+layout: layout-home
+title: GCWeb Jekyll
 ---
-# {{ page.contentTitle }}
-
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-Text can be **bold**, _italic_, or ~~strikethrough~~.
-
-[Link to another page](./another-page.html).
-
-There should be whitespace between paragraphs.
-
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
-
-## Header 2
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png){: .img-responsive}
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
+<div class="provisional bg-cover" data-bgimg="/assets/img/bkg-home-banner-spring.jpg">
+  <div class="container p-0 p-sm-3">
+    <div class="well header-rwd brdr-0 brdr-rds-0 text-white bg-gctheme opct-90">
+      <h1 property="name" id="wb-cont">GCWeb Jekyll</h1>
+      <p class="mrgn-tp-md">Welcome to the GCWeb Jekyll template website</p>
+    </div>
+  </div>
+</div>
+<section class="home-most-requested well well-sm brdr-0">
+  <div class="container">
+    <h2 class="mrgn-tp-md">Most requested</h2>
+    <ul class="wb-eqht list-unstyled mrgn-tp-md mrgn-bttm-sm lst-spcd-2 list-responsive">
+      <li><a href="">Features</a></li>
+      <li><a href="">Translations</a></li>
+      <li><a href="">GCWeb theme</a></li>
+    </ul>
+  </div>
+</section>
+<section class="gc-srvinfo container">
+  <h2 class="wb-inv">Services and information</h2>
+  <div class="wb-eqht row">
+    <div class="col-lg-4 col-md-6">
+      <h3><a href="setup.html">Setup</a></h3>
+      <p>Setup your local environment and install the template.</p>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <h3><a href="settings.html">Settings</a></h3>
+      <p>Customize your website, changing the layouts, titles, etc.</p>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <h3><a href="pages.html">Pages</a></h3>
+      <p>Create pages and use the Front Matter properties</p>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <h3><a href="gh-pages.html">GitHub pages</a></h3>
+      <p>Deploy your website using <code>gh-pages</code> and edit your content.</p>
+    </div>
+  </div>
