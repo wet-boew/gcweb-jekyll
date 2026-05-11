@@ -7,20 +7,11 @@
 
 > **_NOTE:_** GCweb is the default theme for Government of Canada websites, but you can still specify the theme you're using as below.
 
-To use the GCweb theme:
+To use the GCweb theme, add the following to your site's `_config.yml`:
 
-1. Add the following to your site's `_config.yml`:
-
-    ```yml
-    theme: jekyll-theme-gcweb
-    ```
-
-2. Optionally, if you'd like to preview your site on your computer, add the following to your site's `Gemfile`:
-
-    ```ruby
-    gem "github-pages", group: :jekyll_plugins
-    ```
-
+```yml
+remote_theme: wet-boew/gcweb-jekyll
+```
 
 
 ## Customizing
