@@ -47,7 +47,7 @@ verbose: false
 # 7. Site settings
 analytics_adobe: ""
 assets: "https://wet-boew.github.io/themes-dist"
-baseurl: ""
+baseurl: "" # If the site is in a subdirectory like on github.io then set this to "/dirname"
 description:
   en: "Jekyll variant for GCWeb theme" # English site description and default description
   fr: "Adaption Jekyll du theme GCWeb" # French site description and default description
