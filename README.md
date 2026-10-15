@@ -1,9 +1,9 @@
 # Jekyll theme for GCweb
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](code-of-conduct.md) [![Build Status](https://travis-ci.org/wet-boew/gcweb-jekyll.svg?branch=master)](https://travis-ci.org/wet-boew/gcweb-jekyll) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-gcweb.svg)](https://badge.fury.io/rb/jekyll-theme-gcweb)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](code-of-conduct.md) [![Gem Version (deprecated)](https://badge.fury.io/rb/gcweb-jekyll.svg)](https://badge.fury.io/rb/gcweb-jekyll)
 
 *GCweb is a Jekyll theme for Government of Canada websites. You can [preview the theme to see what it looks like](http://wet-boew.github.io/gcweb-jekyll), or even [use it today](#usage).*
 
-## Usage
+## Usage (deprecated)
 
 > **_NOTE:_** GCweb is the default theme for Government of Canada websites, but you can still specify the theme you're using as below.
 
@@ -23,9 +23,9 @@ To use the GCweb theme:
 
 
 
-## Customizing
+## Customizing (deprecated)
 
-### Configuration variables
+### Configuration variables (deprecated)
 
 GCweb will respect the following variables, if set in your site's `_config.yml`:
 
@@ -40,7 +40,7 @@ Additionally, you may choose to set the following optional variables:
 google_analytics: [Your Google Analytics tracking ID]
 ```
 
-### Stylesheet
+### Stylesheet (deprecated)
 
 If you'd like to add your own custom styles:
 
@@ -54,7 +54,7 @@ If you'd like to add your own custom styles:
     ```
 3. Add any custom CSS (or Sass, including imports) you'd like immediately after the `@import` line
 
-### Layouts
+### Layouts (deprecated)
 
 If you'd like to change the theme's HTML layout:
 
@@ -69,7 +69,7 @@ See the [open issues](https://github.com/wet-boew/gcweb-jekyll/issues) for a lis
 
 ## Project philosophy
 
-The GCweb theme is intended to make it quick and easy for Government of Canada employees to create their first (or 100th) website of GitHub for their organisation. The theme should meet the vast majority of users' needs out of the box, erring on the side of simplicity rather than flexibility, and provide users the opportunity to opt-in to additional complexity if they have specific needs or wish to further customize their experience (such as adding custom CSS or modifying the default layout). It should also look great, but that goes without saying.
+The GCweb theme is intended to make it quick and easy for Government of Canada employees to create their first (or 100th) website off GitHub for their organisation. The theme should meet the vast majority of users' needs out of the box, erring on the side of simplicity rather than flexibility, and provide users the opportunity to opt-in to additional complexity if they have specific needs or wish to further customize their experience (such as adding custom CSS or modifying the default layout). It should also look great, but that goes without saying.
 
 ## How to Contribute
 
@@ -79,11 +79,11 @@ See [CONTRIBUTING.md](CONTRIBUTING.md)
 _(French version will be available shortly)_
 
 # Le thème Jekyll de GCweb
-[![Build Status](https://travis-ci.org/wet-boew/gcweb-jekyll.svg?branch=master)](https://travis-ci.org/wet-boew/gcweb-jekyll) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-gcweb.svg)](https://badge.fury.io/rb/jekyll-theme-gcweb)
+[![Gem Version (désuet)](https://badge.fury.io/rb/gcweb-jekyll.svg)](https://badge.fury.io/rb/gcweb-jekyll)
 
 *gcweb-jeckyll est un the Jekyll pour les sites web du gouvernement du Canada. Vous pouvez [voir un aperçu du thème pour avoir une idée de ce à quoi cela ressemble](http://wet-boew.github.io/gcweb-jekyll), ou sinon [vous pouvez l'utiliser maintenant](#utlisitation).*
 
-## Utilisation
+## Utilisation (désuet)
 
 > **_REMARQUE :_** GCweb is the default theme for Government of Canada websites, but you can still specify the theme you're using as below.
 
@@ -103,9 +103,9 @@ To use the GCweb theme:
 
 
 
-## Customizing
+## Customizing (désuet)
 
-### Configuration variables
+### Configuration variables (désuet)
 
 GCweb will respect the following variables, if set in your site's `_config.yml`:
 
@@ -120,7 +120,7 @@ Additionally, you may choose to set the following optional variables:
 google_analytics: [Your Google Analytics tracking ID]
 ```
 
-### Stylesheet
+### Stylesheet (désuet)
 
 If you'd like to add your own custom styles:
 
@@ -134,7 +134,7 @@ If you'd like to add your own custom styles:
     ```
 3. Add any custom CSS (or Sass, including imports) you'd like immediately after the `@import` line
 
-### Layouts
+### Layouts (désuet)
 
 If you'd like to change the theme's HTML layout:
 
